@@ -186,6 +186,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://atarukodaka.github.iogame/fgo.html</loc>
+    <lastmod>2018-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://atarukodaka.github.iogame/garupan-senshadou.html</loc>
     <lastmod>2016-01-29</lastmod>
     <changefreq>monthly</changefreq>
