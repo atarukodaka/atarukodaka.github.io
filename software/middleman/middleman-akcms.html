@@ -1,0 +1,648 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>middleman-akcms 文書管理拡張機能のご紹介 - Ataru Kodaka Site</title>
+   
+    <!-- Javascripts to load -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Stylesheets toload -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="/stylesheets/pygment_trac.css" rel="stylesheet" />
+    <link href="/stylesheets/tagbox.css" rel="stylesheet" />
+    <link href="/stylesheets/style.css" rel="stylesheet" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-56531446-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </head>
+  
+  <!-- ================ -->
+  <body>
+    <div class="container">
+      <div class="row">
+	<div id="header">
+	  <div class="eyecatch">
+	    <div class="sitename">
+	      <a href="/">Ataru Kodaka Site</a></div>
+	  </div>
+	  
+<nav class="navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" data-toggle="collapse" data-target="#topHeader" class="navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="topHeader">
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/archives.html">Archives</a></li>
+      <li><a href="/profile.html">Profile</a></li>
+      <li><a href="/sitemap.html">Sitemap</a></li>
+    </ul>
+  </div>
+</nav>
+
+	</div>
+      </div>
+
+      <!-- sidebar / main -->
+      <div class="row">
+	<div class="col-sm-9">
+	  <div id="main">
+	    <nav>
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+
+    <li>
+      <a href="/software/">software</a>
+    </li>
+    <li>
+      <a href="/software/middleman/">middleman</a>
+    </li>
+
+    <li class="active">
+      middleman-akcms 文書管理拡張機能のご紹介
+    </li>
+  </ol>
+</nav>
+
+         
+
+	    
+<article>
+  <header>
+    <h1>middleman-akcms 文書管理拡張機能のご紹介</h1>
+    
+<!-- required locals: article -->
+
+<div class="article_info">
+  | <a href="/software/middleman/">middleman</a> |
+  <a href="/software/middleman/middleman-akcms.html">27 Jan 2017</a> |
+</div>
+
+    <!-- render_toc(current_resource)  -->
+  </header>
+
+  <div class="content numbering_headings">
+    <h2 id="part-6542c68a322">概要</h2>
+
+<p>middleman のディレクトリごとのサマリーを自動生成する文書管理システムを拡張機能として作ってみました。</p>
+
+<p><a href="https://github.com/atarukodaka/middleman-akcms">akcms - Ataru Kodaka Content Management System - atarukodaka/middleman-akcms</a></p>
+
+<p>動作サンプルはこちら：<a href="http://atarukodaka.github.io/">Home - Ataru Kodaka Site</a></p>
+
+<p>スナップショット：</p>
+
+<div>
+<a href="/images/middleman-akcms-snapshot.png"><img src="/images/middleman-akcms-snapshot.png" alt="スナップショット" style="max-width: 70%"></a>
+</div>
+
+<p>foo/bar/baz.html を作成すると、foo/bar/index.html, foo/index.html, index.html といったディレクトリサマリーページを自動生成します。これにより、どのリソースからも parent, children でたどることができるようになります。</p>
+
+<p>その他、月別アーカイブ、タグ、ペジネーション、breadcrumbなどをサポートします。
+付属テンプレートでは bootstrap3をサポートします。</p>
+
+<h2 id="part-a93d63780c4ce1cc">インストールと使いかた</h2>
+
+<p>middleman4 を入れた状態で、テンプレートを指定してプロジェクトを作ります</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>middleman init proj <span class="nt">--template</span> git@github.com:atarukodaka/middleman-akcms.git
+</code></pre></div>
+<p>後は通常どおりにprojに入って bundle install し、source/ 以下お好きなようにファイルを作って中身を書き build や server 回します。</p>
+
+<h3 id="part-654314eae0f">設定</h3>
+
+<h4 id="config-rb">config.rb</h4>
+
+<p>config.rb にて :akcms を activate し、各種設定をします。</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">activate</span> <span class="ss">:akcms</span> <span class="k">do</span> <span class="o">|</span><span class="n">akcms</span><span class="o">|</span>
+  <span class="n">akcms</span><span class="p">.</span><span class="nf">layout</span> <span class="o">=</span> <span class="s2">"article"</span>
+
+  <span class="n">akcms</span><span class="p">.</span><span class="nf">directory_summary_template</span> <span class="o">=</span> <span class="s2">"templates/directory_summary_template.html"</span>
+  <span class="n">akcms</span><span class="p">.</span><span class="nf">archive_month_template</span> <span class="o">=</span> <span class="s2">"templates/archive_template.html"</span>
+  <span class="n">akcms</span><span class="p">.</span><span class="nf">tag_template</span> <span class="o">=</span> <span class="s2">"templates/tag_template.html"</span>
+  <span class="n">akcms</span><span class="p">.</span><span class="nf">pagination_per_page</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>使うレイアウトやテンプレート群を指定してください。
+ペジネーションのデフォルト表示数/頁も指定できますが、
+記事ごとに指定することもできます（後述）。</p>
+
+<h2 id="part-e4c50f101eccb5bc">設計と機能</h2>
+
+<h3 id="article">記事 / Article</h3>
+
+<p>以下の特徴を持ったリソースは、記事 (article) とみなされ：</p>
+
+<ul>
+<li>ignored でないもの</li>
+<li>拡張子が .html あるいは .htm のもの</li>
+<li>type: フロントマターで &lsquo;article&rsquo; 以外のものが明示的に指定されていないもの</li>
+</ul>
+
+<p>以下のメソッドを持ちます：</p>
+
+<ul>
+<li>title：記事タイトル</li>
+<li>date：日付(TimeWithZoneクラス）。date: フロントマターあるいは更新日時から生成</li>
+<li>summary：サマリー表示</li>
+<li>published?：出力するか。published: false でなければ真</li>
+<li>prev_article：次の記事</li>
+<li>next_article：前の記事</li>
+<li>body：記事本文（レイアウト不使用）</li>
+</ul>
+
+<p>そして、Middleman::Sitemap::Store クラス(sitemapオブジェクトが生成される）には、以下のインスタンスメソッドが追加されます。</p>
+
+<ul>
+<li>articles()：全ての article リソース配列（日付逆順ソート済）</li>
+</ul>
+
+<p>これを使って、</p>
+<div class="highlight"><pre class="highlight erb"><code><span class="nt">&lt;ul&gt;</span>
+<span class="cp">&lt;%</span> <span class="n">sitemap</span><span class="p">.</span><span class="nf">articles</span><span class="p">.</span><span class="nf">first</span><span class="p">(</span><span class="mi">10</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">article</span><span class="o">|</span> <span class="cp">%&gt;</span>
+  <span class="nt">&lt;li&gt;</span><span class="cp">&lt;%=</span> <span class="n">link_to</span><span class="p">(</span><span class="n">article</span><span class="p">.</span><span class="nf">title</span><span class="p">,</span> <span class="n">article</span><span class="p">)</span> <span class="cp">%&gt;</span><span class="nt">&lt;/li&gt;</span>
+<span class="cp">&lt;%</span> <span class="k">end</span><span class="cp">%&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>
+<p>などと最新１０件の記事を表示することができます。</p>
+
+<p>また、全てのリソースに、以下のメソッドが追加されます：</p>
+
+<ul>
+<li>is_article?：article かどうか</li>
+<li>to_article!：当該リソースを article 属性を持たせる</li>
+</ul>
+
+<p>see <a href="https://github.com/atarukodaka/middleman-akcms/blob/master/lib/middleman-akcms/article.rb">https://github.com/atarukodaka/middleman-akcms/blob/master/lib/middleman-akcms/article.rb</a></p>
+
+<h3 id="directorysummary">ディレクトリサマリー / DirectorySummary</h3>
+
+<p>activate の際、テンプレートを指定するとディレクトリサマリー生成機能が稼働します。</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">activate</span> <span class="ss">:akcms</span> <span class="k">do</span> <span class="o">|</span><span class="n">conf</span><span class="o">|</span>
+  <span class="n">conf</span><span class="p">.</span><span class="nf">directory_summary_template</span> <span class="o">=</span> <span class="s2">"templates/directory_summary.html"</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>これにより、例えば foo/bar/baz.html というリソースがあった場合、</p>
+
+<ul>
+<li>foo/bar/index.html</li>
+<li>foo/index.html</li>
+<li>index.html</li>
+</ul>
+
+<p>が（存在しなければ）テンプレートに従いプロキシリソースが生成されます。
+その際、ローカル変数として、</p>
+
+<ul>
+<li>directory:  当該ディレクトリの情報を保持するname, path メソッドを持つオブジェクト</li>
+<li>articles[]：当該ディレクトリ下にある article のリソース配列</li>
+</ul>
+
+<p>が渡されるため、</p>
+<div class="highlight"><pre class="highlight erb"><code>% cat templates/directory_summary.html.erb
+<span class="nt">&lt;h1&gt;</span>Directory: <span class="cp">&lt;%=</span> <span class="n">directory</span><span class="p">.</span><span class="nf">name</span> <span class="cp">%&gt;</span><span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+<span class="cp">&lt;%</span> <span class="n">articles</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">article</span><span class="o">|</span> <span class="cp">%&gt;</span>
+  <span class="nt">&lt;li&gt;</span><span class="cp">&lt;%=</span> <span class="n">link_to</span><span class="p">(</span><span class="n">article</span><span class="p">.</span><span class="nf">title</span><span class="p">,</span> <span class="n">article</span><span class="p">)</span> <span class="cp">%&gt;</span>
+<span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>
+<p>などと当該ディレクトリの記事一覧を作成できます。</p>
+
+<h4 id="breadcrump">breadcrump</h4>
+
+<p>全てのリソースに、ancestors メソッドが追加されるため、以下のように
+breadcrumbs を手軽に作ることができます。</p>
+<div class="highlight"><pre class="highlight erb"><code><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="cp">&lt;%</span> <span class="n">current_resource</span><span class="p">.</span><span class="nf">ancestors</span><span class="p">.</span><span class="nf">reverse</span><span class="p">.</span><span class="nf">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">res</span><span class="o">|</span> <span class="cp">%&gt;</span>
+  <span class="nt">&lt;li&gt;</span><span class="cp">&lt;%=</span> <span class="n">link_to</span><span class="p">(</span><span class="n">res</span><span class="p">.</span><span class="nf">data</span><span class="p">.</span><span class="nf">title</span> <span class="o">||</span> <span class="n">res</span><span class="p">.</span><span class="nf">directory</span><span class="p">.</span><span class="nf">name</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span> <span class="cp">%&gt;</span><span class="nt">&lt;/li&gt;</span>
+  <span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>current_resource.data.title<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div>
+<h4 id="foo-config-yml">foo/config.yml</h4>
+
+<p>あるディレクトリに &ldquo;directory_name: &quot;というエントリを持つ config.yml が存在する場合、
+resource.directory.name はその値が入ります。</p>
+<div class="highlight"><pre class="highlight yaml"><code><span class="s">$ cat source/foo/config.yml</span>
+<span class="na">directory_name</span><span class="pi">:</span> <span class="s">フー</span>
+</code></pre></div><div class="highlight"><pre class="highlight erb"><code>$ cat source/foo/index.html.erb
+<span class="nt">&lt;h1&gt;</span>directory: <span class="cp">&lt;%=</span> <span class="n">current_resource</span><span class="p">.</span><span class="nf">directory</span><span class="p">.</span><span class="nf">name</span> <span class="cp">%&gt;</span><span class="nt">&lt;/h1&gt;</span> <span class="c">&lt;!-- 'フー' と表示される --&gt;</span>
+</code></pre></div>
+<h3 id="part-65422ff107e">タグ</h3>
+
+<p>options.tag_template</p>
+
+<ul>
+<li>resource.tags: 当該リソースのタグ配列</li>
+<li>sitemap.tags：タグ=&gt;プロキシリソースのハッシュ</li>
+</ul>
+
+<h3 id="part-2eb610f01a3a0e03">アーカイブ</h3>
+
+<p>options.archive_month_template</p>
+
+<ul>
+<li>sitemap.archives：日付(TimeWithZone)=&gt;プロキシリソースのハッシュ</li>
+</ul>
+
+<h3 id="part-4fbd94a9653d2f39">ペジネーション</h3>
+
+<ul>
+<li>pagination?：ヘルパ関数</li>
+<li>current_resource.paginator：
+
+<ul>
+<li>page_number</li>
+<li>num_pages</li>
+<li>&hellip;</li>
+</ul></li>
+</ul>
+
+<h3 id="part-def342458c9fed88">シリーズ機能</h3>
+
+<p>options.series_title_template</p>
+
+<p>config.yml</p>
+<div class="highlight"><pre class="highlight yaml"><code><span class="na">series</span><span class="pi">:</span> <span class="s">シリーズ名</span>
+</code></pre></div>
+<h2 id="tips">Tips</h2>
+
+<h3 id="emacs">.emacs</h3>
+
+<p>.emacs や .emacs.d/init.el に</p>
+<div class="highlight"><pre class="highlight common_lisp"><code><span class="p">(</span><span class="nb">require</span> <span class="ss">'autoinsert</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'find-file-hooks</span> <span class="ss">'auto-insert</span><span class="p">)</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">auto-insert-query</span> <span class="no">nil</span><span class="p">)</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">auto-insert-alist</span> 
+      <span class="o">'</span><span class="p">((</span><span class="s">"\\.html\\.md$"</span> <span class="o">.</span> <span class="nv">frontmatter-skeleton</span><span class="p">)</span>
+      <span class="p">(</span><span class="s">"\\.html\\.md\\.erb$"</span> <span class="o">.</span> <span class="nv">frontmatter-skeleton</span><span class="p">)))</span>
+
+<span class="c1">;; middleman-blog: article-front matter</span>
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">insert-article-frontmatter</span> <span class="p">()</span>
+  <span class="p">(</span><span class="nv">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">insert</span> <span class="p">(</span><span class="nv">concat</span> <span class="s">"---\ntitle: \ndate: "</span> <span class="p">(</span><span class="nv">format-time-string</span> <span class="s">"%Y-%m-%d"</span><span class="p">)</span> <span class="s">"\n\n---\n"</span><span class="p">)))</span>
+<span class="p">(</span><span class="nv">define-key</span> <span class="nv">global-map</span> <span class="s">"\C-ca"</span> <span class="ss">'insert-article-frontmatter</span><span class="p">)</span>
+</code></pre></div>
+<p>とやっておくと便利です。</p>
+
+<h4 id="data-config-yml">data/config.yml</h4>
+
+<p>著者名や著者・サイト情報をYAMLで記述します。テンプレートで data.config.author などと取れます。</p>
+
+  </div>
+
+  <footer>
+    <nav>
+  <ul class="pager">
+    <li class="previous">
+      <a href="/figureskating/practise/howtostart.html" title="スケートを始める話">&larr;スケートを始める話</a>
+    </li>
+    
+    <li class="next">
+      <a href="/software/middleman/framework_consideration.html" title="フレームワーク構想">フレームワーク構想&rarr;</a>
+      </li>
+  </ul>
+</nav>
+
+    <div class="references">
+  <div class="header">
+    Sibling Articles under '<a href="/software/middleman/">middleman</a>'
+  </div>
+  <ul>
+    <li>2017-02-16: <a href="/software/middleman/v4-resources-collection.html">middleman v4 の collection と resources 機能を使ってみる</a></li>
+    <li>2017-02-04: <a href="/software/middleman/framework_consideration.html">フレームワーク構想</a></li>
+    <li>2015-04-05: <a href="/software/middleman/extension-memo.html">extension覚書</a></li>
+    <li>2015-03-27: <a href="/software/middleman/extension.html">Middleman の extensionを書くための覚書</a></li>
+    <li>2015-03-27: <a href="/software/middleman/cucumber.html">cucumber で middleman extension の開発とテスト</a></li>
+    <li>2015-03-23: <a href="/software/middleman/redcarpet-toc.html">middlemanページの目次を作る</a></li>
+    <li>2015-03-19: <a href="/software/middleman/explore_middleman-01.html">middleman を読む</a></li>
+  </ul>
+</div>
+
+  </footer>
+</article>
+
+
+	    
+
+
+	  </div>
+	</div>
+	<div class="col-sm-3 hidden-xs">  <!--  hidden-xs hidden-sm" -->
+	  <div id="sidebar">
+  <aside>
+    <script>
+  (function() {
+    var cx = '000285027186330090533:ueco8hy1qge';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+    </script>
+    <gcse:search></gcse:search>
+  </aside>
+  <aside>
+    <h2>PROFILE</h2>
+    <p>
+      Ataru KODAKA 
+      <a href="http://www.twitter.com/ataru_kodaka">@ataru_kodaka</a>
+    </p>
+    <p>figureskating&#x2F;software&#x2F;hobbies</p>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>DIRECTORIES</h2>
+    <ul>
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/cooking/">cooking</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/figureskating/">figureskating</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/figureskating/practise/">practise</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/game/">game</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/game/kancolle.html">艦これ覚書</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/game/kancolle/event/">event</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/game/wot/">wot</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/hobby/">hobby</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/misc/">misc</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/software/">software</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/software/middleman/">middleman</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/software/middleman/susume/">susume</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+    </ul>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>TAGS</h2>
+    <ul class="tag_box inline">
+      <li>
+	<a href="/tags/middleman.html">middleman<span>1</span></a>
+	<a href="/tags/turn.html">turn<span>1</span></a>
+	<a href="/tags/spin.html">spin<span>1</span></a>
+	<a href="/tags/level.html">level<span>1</span></a>
+      </li>
+    </ul>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>RECENT</h2>
+    <ul>
+      <li> <a href="/figureskating/new-rules-proposal.html">(untitled)</a></li>
+      <li> <a href="/software/wsl.html">WSL - Windows Subsytem Linux 開発環境</a></li>
+      <li> <a href="/figureskating/icecance-basic.html">アイスダンスの基礎</a></li>
+      <li> <a href="/game/wot/i-love-luchs.html">luchs を愛でる</a></li>
+      <li> <a href="/figureskating/technical_panel.html">テクニカルパネルのみなさま</a></li>
+      <li> <a href="/software/bash-ubuntu-windows-environment.html">Bash Ubuntu Windows 環境設定メモ</a></li>
+      <li> <a href="/software/gnomo-ubuntu-vagrant.html">vagrant で Ubuntu&#x2F;GNOME</a></li>
+      <li> <a href="/software/datatables-rails.html">Datatable を rails で使う</a></li>
+      <li> <a href="/software/postfix-relay-gmail.html">postfix で gmail経由でメールを送る</a></li>
+      <li> <a href="/software/sakura-rails-passenger.html">さくらVPSで rails-passenger を動かす</a></li>
+    </ul>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>MONTHLY ARCHIVES</h2>
+    <ul>
+      <li> <a href="/archives/2019-02.html">Feb 2019</a> (2)</li>
+      <li> <a href="/archives/2017-11.html">Nov 2017</a> (1)</li>
+      <li> <a href="/archives/2017-10.html">Oct 2017</a> (4)</li>
+      <li> <a href="/archives/2017-07.html">Jul 2017</a> (1)</li>
+      <li> <a href="/archives/2017-05.html">May 2017</a> (2)</li>
+      <li> <a href="/archives/2017-04.html">Apr 2017</a> (1)</li>
+      <li> <a href="/archives/2017-03.html">Mar 2017</a> (1)</li>
+      <li> <a href="/archives/2017-02.html">Feb 2017</a> (5)</li>
+      <li> <a href="/archives/2017-01.html">Jan 2017</a> (2)</li>
+      <li> <a href="/archives/2016-09.html">Sep 2016</a> (1)</li>
+      <li> <a href="/archives/2016-06.html">Jun 2016</a> (2)</li>
+      <li> <a href="/archives/2016-03.html">Mar 2016</a> (2)</li>
+      <li> <a href="/archives/2016-02.html">Feb 2016</a> (1)</li>
+      <li> <a href="/archives/2016-01.html">Jan 2016</a> (2)</li>
+      <li> <a href="/archives/2015-12.html">Dec 2015</a> (6)</li>
+      <li> <a href="/archives/2015-11.html">Nov 2015</a> (2)</li>
+      <li> <a href="/archives/2015-10.html">Oct 2015</a> (2)</li>
+      <li> <a href="/archives/2015-08.html">Aug 2015</a> (1)</li>
+      <li> <a href="/archives/2015-06.html">Jun 2015</a> (1)</li>
+      <li> <a href="/archives/2015-05.html">May 2015</a> (5)</li>
+      <li> <a href="/archives/2015-04.html">Apr 2015</a> (3)</li>
+      <li> <a href="/archives/2015-03.html">Mar 2015</a> (11)</li>
+      <li> <a href="/archives/2015-02.html">Feb 2015</a> (10)</li>
+      <li> <a href="/archives/2015-01.html">Jan 2015</a> (1)</li>
+      <li> <a href="/archives/2014-12.html">Dec 2014</a> (3)</li>
+      <li> <a href="/archives/2014-11.html">Nov 2014</a> (11)</li>
+    </ul>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>AFFILIATES</h2>
+    <div>
+      
+<div class="amazon_item">
+  <a href="https://www.amazon.co.jp/Anker-PowerCore-%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC-Android%E5%AF%BE%E5%BF%9C-2017%E5%B9%B49%E6%9C%88%E6%99%82%E7%82%B9/dp/B019GNUT0C?psc=1&amp;SubscriptionId=AKIAJFWTRXTZFXFO6WCQ&amp;tag=myhoney0079-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B019GNUT0C" target="_blank"><img src=""></a>
+  <a href="https://www.amazon.co.jp/Anker-PowerCore-%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC-Android%E5%AF%BE%E5%BF%9C-2017%E5%B9%B49%E6%9C%88%E6%99%82%E7%82%B9/dp/B019GNUT0C?psc=1&amp;SubscriptionId=AKIAJFWTRXTZFXFO6WCQ&amp;tag=myhoney0079-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B019GNUT0C" target="_blank">Anker PowerCore 10000 (10000mAh 最小最軽量 大容量 モバイルバッテリー) iPhone&amp;Android対応 *2017年9月時点</a><br/>
+  <div class="item_detail">
+     / Anker / 
+  </div>
+</div>
+      
+<div class="amazon_item">
+  <a href="https://www.amazon.co.jp/%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%88-%E7%BE%8E%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-%E9%87%8E%E5%8F%A3-%E7%BE%8E%E6%83%A0/dp/4403320341?SubscriptionId=AKIAJFWTRXTZFXFO6WCQ&amp;tag=myhoney0079-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4403320341" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41EHhHt1uIL._SL160_.jpg"></a>
+  <a href="https://www.amazon.co.jp/%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%88-%E7%BE%8E%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-%E9%87%8E%E5%8F%A3-%E7%BE%8E%E6%83%A0/dp/4403320341?SubscriptionId=AKIAJFWTRXTZFXFO6WCQ&amp;tag=myhoney0079-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4403320341" target="_blank">フィギュアスケート 美のテクニック</a><br/>
+  <div class="item_detail">
+    野口 美惠 / 新書館 / 2011-04-29
+  </div>
+</div>
+    </div>
+  </aside>
+
+</div>
+
+	</div>
+      </div>
+      <!-- footer -->
+      <div class="row">
+	<footer id="footer">
+	  <div class="copyright">
+	    &copy; Copyright(2014-2019) Ataru KODAKA
+	    powered by <a href="https://middlemanapp.com">middleman</a> and
+	    <a href="https://github.com/atarukodaka/middleman-akcms">middleman-akcms</a>.
+	  </div>
+	</footer>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </body>
+</html>
+
+
+

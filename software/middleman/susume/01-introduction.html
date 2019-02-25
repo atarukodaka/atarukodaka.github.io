@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>イントロダクション - Ataru Kodaka Site</title>
+   
+    <!-- Javascripts to load -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Stylesheets toload -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="/stylesheets/pygment_trac.css" rel="stylesheet" />
+    <link href="/stylesheets/tagbox.css" rel="stylesheet" />
+    <link href="/stylesheets/style.css" rel="stylesheet" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-56531446-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </head>
+  
+  <!-- ================ -->
+  <body>
+    <div class="container">
+      <div class="row">
+	<div id="header">
+	  <div class="eyecatch">
+	    <div class="sitename">
+	      <a href="/">Ataru Kodaka Site</a></div>
+	  </div>
+	  
+<nav class="navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" data-toggle="collapse" data-target="#topHeader" class="navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="topHeader">
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/archives.html">Archives</a></li>
+      <li><a href="/profile.html">Profile</a></li>
+      <li><a href="/sitemap.html">Sitemap</a></li>
+    </ul>
+  </div>
+</nav>
+
+	</div>
+      </div>
+
+      <!-- sidebar / main -->
+      <div class="row">
+	<div class="col-sm-9">
+	  <div id="main">
+	    <nav>
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+
+    <li>
+      <a href="/software/">software</a>
+    </li>
+    <li>
+      <a href="/software/middleman/">middleman</a>
+    </li>
+    <li>
+      <a href="/software/middleman/susume/">susume</a>
+    </li>
+
+    <li class="active">
+      イントロダクション
+    </li>
+  </ol>
+</nav>
+
+         
+
+	    
+<article>
+  <header>
+    <h1>イントロダクション</h1>
+    
+<!-- required locals: article -->
+
+<div class="article_info">
+  | <a href="/software/middleman/susume/">susume</a> |
+  <a href="/software/middleman/susume/01-introduction.html">17 Mar 2015</a> |
+</div>
+
+    <!-- render_toc(current_resource)  -->
+  </header>
+
+  <div class="content numbering_headings">
+    <h2 id="middleman">middleman とは</h2>
+
+<p>Middleman: 作業を効率化するフロントエンド開発ツール</p>
+
+<p>静的サイトを構築するフレームワーク。静的ファイルファイルジェネレーターやブログツールとしても使える。</p>
+
+<p>markdown や erb で元ファイルをつらつら書いてコマンド一発で html 郡が出力でき、 お手軽にサイトやブログを運営することができる。</p>
+
+<p>似たようなのに Jekyll があるが、後述のとおり自由度的には middleman が上回る。</p>
+
+<p>参考サイト：</p>
+
+<ul>
+<li>静的サイト開発にmiddlemanを使う - ワシはワシが育てる</li>
+<li>middleman-blogをgithubでホストする</li>
+</ul>
+
+<h3 id="part-7c655080d181974a">いいところ</h3>
+
+<p>ruby で完結</p>
+
+<p>すべて本体、エクステンション・ヘルパー（プラグインみたいなもん）はすべて ruby で書かれてるため、 いろいろなんでも出来る。 helper でお手軽によく使う関数を作れたり、 extension で結構込み入ったこともできるし、 その気になれば本体から fork すればいい。 ベースとなるフレームワークもsintra/padrino なので、理解しやすい。
+同じようなツールとしてjekyll があるが、 これは本体は ruby だけど、プラグインは Liquid なので自由度が欠ける。 github 上で jekyll が動くとはいえ自作プラグインはダメだし。</p>
+
+<p>慣れたエディタとコンソールで完結</p>
+
+<p>emacsで書いてmake一発でファイル生成とアップロードが完了。ウェブでせこせこやらんでもいい。
+データの保持
+基本手元に元データファイルはあるが、 html 郡をアップロードするついでに、元ファイルも github に上げておくとバックアップにもなる。 世のブログサービスのように移管するときに困らずによい。</p>
+
+<h3 id="part-4bcd744dbeb38354">悪いところ</h3>
+
+<p>名前、初期デザインがイマイチ</p>
+
+<p>middleman って中間男？ 初期ファイルでのデザインがいまいち。アニメロゴなどいらん。 これで一体何ができるのかイメージがわかない。</p>
+
+<p>情報が少ない</p>
+
+<p>ググってもあまりない。まだ Jekyll のほうが多いかな。</p>
+
+<p>知識が必要</p>
+
+<p>unix系、rubyの知識がある程度は必要。 ruby でいじくれるといっても使えなきゃ意味がない。 敷居は高め。</p>
+
+<h2 id="part-13396f82c27d244b">インストールと起動</h2>
+
+<p>とりあえず準備から外部サーバーに公開するまで。 作法に則って、–template で作りやり方でいきます。</p>
+
+<h3 id="part-bdf5c55b74bb686">インストール</h3>
+
+<p>まず middleman 自体のインストールをし、あたし作のテンプレートを落としてきます：</p>
+<div class="highlight"><pre class="highlight shell"><code>% gem install middleman
+% git clone git@github.com:atarukodaka/middleman-template-aks.git ~/.middleman/template-aks
+</code></pre></div>
+<p>その後、「プロジェクト」、つまり開設するサイトなりブログなり用の一式ファイル群を作ります。 ここでは “site” としておきます：</p>
+<div class="highlight"><pre class="highlight shell"><code>% <span class="nb">pwd</span>
+/home/foo
+% middleman init site <span class="nt">--template</span> template-aks <span class="o">&amp;&amp;</span> <span class="nb">cd </span>site
+</code></pre></div>
+<p>これで site/ 以下に一式作られました。</p>
+
+<h3 id="part-506c3eb7f31b77b6">ファイル群の作成</h3>
+
+<p>middleman の build コマンドを使います。</p>
+<div class="highlight"><pre class="highlight plaintext"><code>% bundle exec middleman build
+</code></pre></div>
+<p>そうすると、source/* のファイルがいろいろと加工されて build/ 以下に出力されます。 build/index.html などを覗いてみるといいかもしれません。</p>
+
+<p>ちなみに “bundle exec middleman” はよく使うので、alias に加えておくと便利です。</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">alias </span><span class="nv">ru</span><span class="o">=</span><span class="s2">"rackup"</span>
+<span class="nb">alias </span><span class="nv">be</span><span class="o">=</span><span class="s2">"bundle exec"</span>
+<span class="nb">alias </span><span class="nv">mm</span><span class="o">=</span><span class="s2">"bundle exec middleman"</span>
+</code></pre></div>
+<h3 id="part-b626f113966db01f">ローカルサーバーの立ち上げ</h3>
+
+<p>とはいえ生 html は読みにくいので、 middleman server コマンドを使ってローカルサーバーを立ち上げます。</p>
+<div class="highlight"><pre class="highlight plaintext"><code>% bundle exec middleman server
+</code></pre></div>
+<p>すると <a href="http://localhost:4567">http://localhost:4567</a> にこんな感じで：</p>
+
+<p>Sample image</p>
+
+<p>テンプレートではlivereload を入れているので、サーバーを background で立ち上げたままにしておいても、元ファイルを変更すればサーバー上で生成しなおしてくれます。</p>
+
+<p>ただし vagrant では middleman server に –force-polling オプションを付けてあげないと うまく変更を検知してくれないことがあるので、つけたほうがよいでしょう。</p>
+
+<p>ちなみにローカルサーバーで稼働させるだけなら build する必要はありません（データはサーバーが保持）。</p>
+
+<h3 id="part-688cdb55c9b25d8b">外部サーバーへのアップロード</h3>
+
+<p>build/ 以下のファイル群をftp で geocities （死語）に上げるなりしてもいいのですが、 ここは github にあげます。</p>
+
+<p>まず、github のアカウントを取得し、サイト公開用のレポジトリを作成してください（ここでは “site” とする）。</p>
+<div class="highlight"><pre class="highlight shell"><code>% <span class="nb">pwd</span>
+/home/foo/site
+% git remote set-url origin git@github.com:your-github-acct/site.git
+% <span class="nv">ASSET_HOST</span><span class="o">=</span>/site bundle <span class="nb">exec </span>middleman deploy <span class="nt">-b</span>
+（github のパスワードを聞かれたら入力）
+</code></pre></div>
+<p>上述の Makefile では make deploy 一発でできるようにしてあります。 毎回パスワードを打ち込むのが面倒なら、 あらかじめ</p>
+<div class="highlight"><pre class="highlight plaintext"><code>% eval `ssh-agent`; ssh-add ~/.ssh/id_rsa
+</code></pre></div>
+<p>としてパスワードを入れておけばよいかと。</p>
+
+<p>これで、&quot;<a href="http://your-github-acct.github.io//site">http://your-github-acct.github.io//site</a>&ldquo; で参照できます。</p>
+
+  </div>
+
+  <footer>
+    <nav>
+  <ul class="pager">
+    <li class="previous">
+      <a href="/figureskating/practise/office-turn-training.html" title="スリーターンの陸上イメトレ">&larr;スリーターンの陸上イメトレ</a>
+    </li>
+    
+    <li class="next">
+      <a href="/software/middleman/susume/03-customize.html" title="カスタマイズ">カスタマイズ&rarr;</a>
+      </li>
+  </ul>
+</nav>
+
+    <div class="references">
+  <div class="header">
+    Sibling Articles under '<a href="/software/middleman/susume/">susume</a>'
+  </div>
+  <ul>
+    <li>2015-03-19: <a href="/software/middleman/susume/08-memo.html">middleman を読む</a></li>
+    <li>2015-03-18: <a href="/software/middleman/susume/03-customize.html">カスタマイズ</a></li>
+  </ul>
+</div>
+
+  </footer>
+</article>
+
+
+	    
+
+
+	  </div>
+	</div>
+	<div class="col-sm-3 hidden-xs">  <!--  hidden-xs hidden-sm" -->
+	  <div id="sidebar">
+  <aside>
+    <script>
+  (function() {
+    var cx = '000285027186330090533:ueco8hy1qge';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+    </script>
+    <gcse:search></gcse:search>
+  </aside>
+  <aside>
+    <h2>PROFILE</h2>
+    <p>
+      Ataru KODAKA 
+      <a href="http://www.twitter.com/ataru_kodaka">@ataru_kodaka</a>
+    </p>
+    <p>figureskating&#x2F;software&#x2F;hobbies</p>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>DIRECTORIES</h2>
+    <ul>
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/cooking/">cooking</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/figureskating/">figureskating</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/figureskating/practise/">practise</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/game/">game</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/game/kancolle.html">艦これ覚書</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/game/kancolle/event/">event</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/game/wot/">wot</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/hobby/">hobby</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/misc/">misc</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+      
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/software/">software</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/software/middleman/">middleman</a>
+  
+  <ul>
+    
+<!-- required locals: resource, options -->
+
+
+
+
+<li>
+  <a href="/software/middleman/susume/">susume</a>
+  
+  <ul>
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+  </ul>
+</li>
+
+
+    </ul>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>TAGS</h2>
+    <ul class="tag_box inline">
+      <li>
+	<a href="/tags/middleman.html">middleman<span>1</span></a>
+	<a href="/tags/turn.html">turn<span>1</span></a>
+	<a href="/tags/spin.html">spin<span>1</span></a>
+	<a href="/tags/level.html">level<span>1</span></a>
+      </li>
+    </ul>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>RECENT</h2>
+    <ul>
+      <li> <a href="/figureskating/new-rules-proposal.html">(untitled)</a></li>
+      <li> <a href="/software/wsl.html">WSL - Windows Subsytem Linux 開発環境</a></li>
+      <li> <a href="/figureskating/icecance-basic.html">アイスダンスの基礎</a></li>
+      <li> <a href="/game/wot/i-love-luchs.html">luchs を愛でる</a></li>
+      <li> <a href="/figureskating/technical_panel.html">テクニカルパネルのみなさま</a></li>
+      <li> <a href="/software/bash-ubuntu-windows-environment.html">Bash Ubuntu Windows 環境設定メモ</a></li>
+      <li> <a href="/software/gnomo-ubuntu-vagrant.html">vagrant で Ubuntu&#x2F;GNOME</a></li>
+      <li> <a href="/software/datatables-rails.html">Datatable を rails で使う</a></li>
+      <li> <a href="/software/postfix-relay-gmail.html">postfix で gmail経由でメールを送る</a></li>
+      <li> <a href="/software/sakura-rails-passenger.html">さくらVPSで rails-passenger を動かす</a></li>
+    </ul>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>MONTHLY ARCHIVES</h2>
+    <ul>
+      <li> <a href="/archives/2019-02.html">Feb 2019</a> (2)</li>
+      <li> <a href="/archives/2017-11.html">Nov 2017</a> (1)</li>
+      <li> <a href="/archives/2017-10.html">Oct 2017</a> (4)</li>
+      <li> <a href="/archives/2017-07.html">Jul 2017</a> (1)</li>
+      <li> <a href="/archives/2017-05.html">May 2017</a> (2)</li>
+      <li> <a href="/archives/2017-04.html">Apr 2017</a> (1)</li>
+      <li> <a href="/archives/2017-03.html">Mar 2017</a> (1)</li>
+      <li> <a href="/archives/2017-02.html">Feb 2017</a> (5)</li>
+      <li> <a href="/archives/2017-01.html">Jan 2017</a> (2)</li>
+      <li> <a href="/archives/2016-09.html">Sep 2016</a> (1)</li>
+      <li> <a href="/archives/2016-06.html">Jun 2016</a> (2)</li>
+      <li> <a href="/archives/2016-03.html">Mar 2016</a> (2)</li>
+      <li> <a href="/archives/2016-02.html">Feb 2016</a> (1)</li>
+      <li> <a href="/archives/2016-01.html">Jan 2016</a> (2)</li>
+      <li> <a href="/archives/2015-12.html">Dec 2015</a> (6)</li>
+      <li> <a href="/archives/2015-11.html">Nov 2015</a> (2)</li>
+      <li> <a href="/archives/2015-10.html">Oct 2015</a> (2)</li>
+      <li> <a href="/archives/2015-08.html">Aug 2015</a> (1)</li>
+      <li> <a href="/archives/2015-06.html">Jun 2015</a> (1)</li>
+      <li> <a href="/archives/2015-05.html">May 2015</a> (5)</li>
+      <li> <a href="/archives/2015-04.html">Apr 2015</a> (3)</li>
+      <li> <a href="/archives/2015-03.html">Mar 2015</a> (11)</li>
+      <li> <a href="/archives/2015-02.html">Feb 2015</a> (10)</li>
+      <li> <a href="/archives/2015-01.html">Jan 2015</a> (1)</li>
+      <li> <a href="/archives/2014-12.html">Dec 2014</a> (3)</li>
+      <li> <a href="/archives/2014-11.html">Nov 2014</a> (11)</li>
+    </ul>
+  </aside>
+  <!-- ================ -->
+  <aside>
+    <h2>AFFILIATES</h2>
+    <div>
+      
+<div class="amazon_item">
+  <a href="https://www.amazon.co.jp/Anker-PowerCore-%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC-Android%E5%AF%BE%E5%BF%9C-2017%E5%B9%B49%E6%9C%88%E6%99%82%E7%82%B9/dp/B019GNUT0C?psc=1&amp;SubscriptionId=AKIAJFWTRXTZFXFO6WCQ&amp;tag=myhoney0079-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B019GNUT0C" target="_blank"><img src=""></a>
+  <a href="https://www.amazon.co.jp/Anker-PowerCore-%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC-Android%E5%AF%BE%E5%BF%9C-2017%E5%B9%B49%E6%9C%88%E6%99%82%E7%82%B9/dp/B019GNUT0C?psc=1&amp;SubscriptionId=AKIAJFWTRXTZFXFO6WCQ&amp;tag=myhoney0079-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B019GNUT0C" target="_blank">Anker PowerCore 10000 (10000mAh 最小最軽量 大容量 モバイルバッテリー) iPhone&amp;Android対応 *2017年9月時点</a><br/>
+  <div class="item_detail">
+     / Anker / 
+  </div>
+</div>
+      
+<div class="amazon_item">
+  <a href="https://www.amazon.co.jp/%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%88-%E7%BE%8E%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-%E9%87%8E%E5%8F%A3-%E7%BE%8E%E6%83%A0/dp/4403320341?SubscriptionId=AKIAJFWTRXTZFXFO6WCQ&amp;tag=myhoney0079-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4403320341" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41EHhHt1uIL._SL160_.jpg"></a>
+  <a href="https://www.amazon.co.jp/%E3%83%95%E3%82%A3%E3%82%AE%E3%83%A5%E3%82%A2%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%88-%E7%BE%8E%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-%E9%87%8E%E5%8F%A3-%E7%BE%8E%E6%83%A0/dp/4403320341?SubscriptionId=AKIAJFWTRXTZFXFO6WCQ&amp;tag=myhoney0079-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4403320341" target="_blank">フィギュアスケート 美のテクニック</a><br/>
+  <div class="item_detail">
+    野口 美惠 / 新書館 / 2011-04-29
+  </div>
+</div>
+    </div>
+  </aside>
+
+</div>
+
+	</div>
+      </div>
+      <!-- footer -->
+      <div class="row">
+	<footer id="footer">
+	  <div class="copyright">
+	    &copy; Copyright(2014-2019) Ataru KODAKA
+	    powered by <a href="https://middlemanapp.com">middleman</a> and
+	    <a href="https://github.com/atarukodaka/middleman-akcms">middleman-akcms</a>.
+	  </div>
+	</footer>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </body>
+</html>
+
+
+
