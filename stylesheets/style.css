@@ -1,24 +1,24 @@
 /*****************************************************************/
 /* layout */
-/* line 4, source/stylesheets/style.css.scss */
+/* line 4, style.css.scss */
 body {
   background-color: #eee;
   font-family: "Segoe UI", MeiryoKe_PGothic, "Meiryo", "Meiryo UI", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
   font-size: medium; }
 
-/* line 10, source/stylesheets/style.css.scss */
+/* line 10, style.css.scss */
 body > .container {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   background-color: white; }
 
 /*****************************************************************/
 /* link */
-/* line 18, source/stylesheets/style.css.scss */
+/* line 18, style.css.scss */
 a {
   color: #006ffa;
   /* visited */ }
 
-/* line 21, source/stylesheets/style.css.scss */
+/* line 21, style.css.scss */
 a:visited, a:hover {
   color: #337fda;
   /* unvisited */
@@ -26,47 +26,47 @@ a:visited, a:hover {
 
 /*****************************************************************/
 /* panes */
-/* line 30, source/stylesheets/style.css.scss */
+/* line 30, style.css.scss */
 #header .eyecatch {
   background-color: black;
   margin-top: 10px; }
-  /* line 34, source/stylesheets/style.css.scss */
+  /* line 34, style.css.scss */
   #header .eyecatch .sitename {
     padding: 20px;
     font-weight: lighter;
     font-size: x-large;
     color: #aaa; }
-    /* line 40, source/stylesheets/style.css.scss */
+    /* line 40, style.css.scss */
     #header .eyecatch .sitename a {
       color: #aaa; }
 
-/* line 45, source/stylesheets/style.css.scss */
+/* line 45, style.css.scss */
 #sidebar {
   font-size: small;
   margin-left: 20px; }
-  /* line 49, source/stylesheets/style.css.scss */
+  /* line 49, style.css.scss */
   #sidebar aside {
     border-top: 1px solid #eeeeee; }
-    /* line 52, source/stylesheets/style.css.scss */
+    /* line 52, style.css.scss */
     #sidebar aside h2 {
       color: #999999;
       font-size: medium; }
-    /* line 56, source/stylesheets/style.css.scss */
+    /* line 56, style.css.scss */
     #sidebar aside li {
       margin-left: -1em; }
 
-/* line 60, source/stylesheets/style.css.scss */
+/* line 60, style.css.scss */
 #footer {
   background-color: white;
   padding: 20px;
   font-size: small; }
-  /* line 65, source/stylesheets/style.css.scss */
+  /* line 65, style.css.scss */
   #footer .copyright {
     border-top: 1px solid black;
     padding: 10px; }
 
 /*****************************************************************/
-/* line 73, source/stylesheets/style.css.scss */
+/* line 73, style.css.scss */
 #main {
   /* pad some px in each side */
   padding-left: 10px;
@@ -76,7 +76,7 @@ a:visited, a:hover {
   /* table of contents */
   /* **************************************************************** */
   /* h1-h6 */
-  /*
+    /*
     img {
 	box-shadow: 1px 1px 4px rgba(0,0,0,.5);
 	max-width: 90%;
@@ -84,7 +84,7 @@ a:visited, a:hover {
 	display: block;
     }
    */ }
-  /* line 80, source/stylesheets/style.css.scss */
+  /* line 80, style.css.scss */
   #main .breadcrumb {
     font-size: small;
     background-color: white;
@@ -92,109 +92,109 @@ a:visited, a:hover {
     border-bottom: 1px solid #ddd;
     padding-top: 5px;
     padding-bottom: 5px; }
-    /* line 89, source/stylesheets/style.css.scss */
+    /* line 89, style.css.scss */
     #main .breadcrumb li.active {
       font-weight: bold; }
-  /* line 96, source/stylesheets/style.css.scss */
+  /* line 96, style.css.scss */
   #main .toc button {
     display: block;
     margin: 10px 10px 10px auto; }
-  /* line 100, source/stylesheets/style.css.scss */
+  /* line 100, style.css.scss */
   #main .toc #toc_content {
     border: 1px solid #cccccc;
     padding: 20px;
     background-color: #fcfcfc; }
-    /* line 104, source/stylesheets/style.css.scss */
+    /* line 104, style.css.scss */
     #main .toc #toc_content li {
       list-style-type: decimal; }
-  /* line 111, source/stylesheets/style.css.scss */
+  /* line 111, style.css.scss */
   #main .content {
     padding-top: 1em;
     padding-bottom: 1em; }
-  /* line 115, source/stylesheets/style.css.scss */
+  /* line 115, style.css.scss */
   #main .article_info {
     font-size: small;
     text-align: right; }
-  /* line 122, source/stylesheets/style.css.scss */
+  /* line 122, style.css.scss */
   #main h1 {
     font-weight: bold;
     border-bottom: 1px solid #888;
     padding-top: 10px;
     padding-bottom: 5px; }
-  /* line 122, source/stylesheets/style.css.scss */
+  /* line 122, style.css.scss */
   #main h2 {
     font-weight: bold;
     border-bottom: 1px solid #888;
     padding-top: 10px;
     padding-bottom: 5px; }
-  /* line 122, source/stylesheets/style.css.scss */
+  /* line 122, style.css.scss */
   #main h3 {
     font-weight: bold;
     border-bottom: 1px solid #888;
     padding-top: 10px;
     padding-bottom: 5px; }
-  /* line 122, source/stylesheets/style.css.scss */
+  /* line 122, style.css.scss */
   #main h4 {
     font-weight: bold;
     border-bottom: 1px solid #888;
     padding-top: 10px;
     padding-bottom: 5px; }
-  /* line 122, source/stylesheets/style.css.scss */
+  /* line 122, style.css.scss */
   #main h5 {
     font-weight: bold;
     border-bottom: 1px solid #888;
     padding-top: 10px;
     padding-bottom: 5px; }
-  /* line 122, source/stylesheets/style.css.scss */
+  /* line 122, style.css.scss */
   #main h6 {
     font-weight: bold;
     border-bottom: 1px solid #888;
     padding-top: 10px;
     padding-bottom: 5px; }
-  /* line 129, source/stylesheets/style.css.scss */
+  /* line 129, style.css.scss */
   #main h1 {
     font-size: xx-large; }
-  /* line 130, source/stylesheets/style.css.scss */
+  /* line 130, style.css.scss */
   #main h2 {
     font-size: x-large; }
-  /* line 131, source/stylesheets/style.css.scss */
+  /* line 131, style.css.scss */
   #main h3, #main h4 {
     font-size: large; }
-  /* line 132, source/stylesheets/style.css.scss */
+  /* line 132, style.css.scss */
   #main h5, #main h6 {
     font-size: medium; }
-  /* line 142, source/stylesheets/style.css.scss */
+  /* line 142, style.css.scss */
   #main img {
     vertical-align: middle; }
-  /* line 146, source/stylesheets/style.css.scss */
+  /* line 146, style.css.scss */
   #main dl dt, #main dl dd {
     margin: 10px 0 10px 0; }
-  /* line 147, source/stylesheets/style.css.scss */
+  /* line 147, style.css.scss */
   #main dl dd {
     padding-left: 20px; }
-  /* line 150, source/stylesheets/style.css.scss */
+  /* line 150, style.css.scss */
   #main pre {
     margin: 30px auto 30px auto;
     font-size: small; }
-  /* line 154, source/stylesheets/style.css.scss */
+  /* line 154, style.css.scss */
   #main .pagination, #main .pager {
     text-align: center;
     font-size: small; }
-  /* line 159, source/stylesheets/style.css.scss */
+  /* line 159, style.css.scss */
   #main .continue_reading {
     font-size: small;
     font-style: italic;
     text-align: right; }
-  /* line 165, source/stylesheets/style.css.scss */
+  /* line 165, style.css.scss */
   #main .article_summary h1 {
     font-size: large;
     margin-bottom: 5px; }
-  /* line 170, source/stylesheets/style.css.scss */
+  /* line 170, style.css.scss */
   #main .references {
     border-top: 10px solid #e4e4e4;
     background-color: #f8f8f8;
     padding: 16px; }
-    /* line 175, source/stylesheets/style.css.scss */
+    /* line 175, style.css.scss */
     #main .references .header {
       font-weight: bold;
       /* background-color: #e4e4e4; */
@@ -202,88 +202,73 @@ a:visited, a:hover {
 
 /*****************************************************************/
 /* numbering headings */
-/* line 186, source/stylesheets/style.css.scss */
+/* line 186, style.css.scss */
 body {
   counter-reset: h1; }
 
-/* line 191, source/stylesheets/style.css.scss */
+/* line 191, style.css.scss */
 .numbering_headings h1 {
   counter-increment: h1;
   counter-reset: h2; }
-
-/* line 195, source/stylesheets/style.css.scss */
+/* line 195, style.css.scss */
 .numbering_headings h1:before {
   color: #888;
   font-size: large; }
-
-/* line 191, source/stylesheets/style.css.scss */
+/* line 191, style.css.scss */
 .numbering_headings h2 {
   counter-increment: h2;
   counter-reset: h3; }
-
-/* line 195, source/stylesheets/style.css.scss */
+/* line 195, style.css.scss */
 .numbering_headings h2:before {
   color: #888;
   font-size: large; }
-
-/* line 191, source/stylesheets/style.css.scss */
+/* line 191, style.css.scss */
 .numbering_headings h3 {
   counter-increment: h3;
   counter-reset: h4; }
-
-/* line 195, source/stylesheets/style.css.scss */
+/* line 195, style.css.scss */
 .numbering_headings h3:before {
   color: #888;
   font-size: large; }
-
-/* line 191, source/stylesheets/style.css.scss */
+/* line 191, style.css.scss */
 .numbering_headings h4 {
   counter-increment: h4;
   counter-reset: h5; }
-
-/* line 195, source/stylesheets/style.css.scss */
+/* line 195, style.css.scss */
 .numbering_headings h4:before {
   color: #888;
   font-size: large; }
-
-/* line 191, source/stylesheets/style.css.scss */
+/* line 191, style.css.scss */
 .numbering_headings h5 {
   counter-increment: h5;
   counter-reset: h6; }
-
-/* line 195, source/stylesheets/style.css.scss */
+/* line 195, style.css.scss */
 .numbering_headings h5:before {
   color: #888;
   font-size: large; }
-
-/* line 191, source/stylesheets/style.css.scss */
+/* line 191, style.css.scss */
 .numbering_headings h6 {
   counter-increment: h6;
   counter-reset: h7; }
-
-/* line 195, source/stylesheets/style.css.scss */
+/* line 195, style.css.scss */
 .numbering_headings h6:before {
   color: #888;
   font-size: large; }
-
-/* line 199, source/stylesheets/style.css.scss */
+/* line 199, style.css.scss */
 .numbering_headings h2:before {
   content: counter(h2) ". "; }
-
-/* line 200, source/stylesheets/style.css.scss */
+/* line 200, style.css.scss */
 .numbering_headings h3:before {
   content: counter(h2) "." counter(h3) ". "; }
-
-/* line 201, source/stylesheets/style.css.scss */
+/* line 201, style.css.scss */
 .numbering_headings h4:before {
   content: counter(h2) "." counter(h3) "." counter(h4) ". "; }
-
-/* line 202, source/stylesheets/style.css.scss */
+/* line 202, style.css.scss */
 .numbering_headings h5:before {
   content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "; }
 
 /*****************************************************************/
-/* line 206, source/stylesheets/style.css.scss */
+/* line 206, style.css.scss */
 .amazon_item {
   padding: 10px;
   border: 1px solid #E3E3E3;

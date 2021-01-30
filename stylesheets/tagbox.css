@@ -1,17 +1,17 @@
 /*****************************************************************/
 /* tag_box */
-/* line 4, source/stylesheets/tagbox.css.scss */
+/* line 4, tagbox.css.scss */
 .tag_box {
   list-style: none;
   margin: 0;
   overflow: hidden; }
-  /* line 9, source/stylesheets/tagbox.css.scss */
+  /* line 9, tagbox.css.scss */
   .tag_box li {
     line-height: 28px; }
-    /* line 12, source/stylesheets/tagbox.css.scss */
+    /* line 12, tagbox.css.scss */
     .tag_box li i {
       opacity: 0.9; }
-    /* line 15, source/stylesheets/tagbox.css.scss */
+    /* line 15, tagbox.css.scss */
     .tag_box li a {
       padding: 3px 6px;
       margin: 2px;
@@ -20,19 +20,19 @@
       border-radius: 3px;
       text-decoration: none;
       border: 1px dashed #cccccc; }
-      /* line 24, source/stylesheets/tagbox.css.scss */
+      /* line 24, tagbox.css.scss */
       .tag_box li a span {
         vertical-align: super;
         font-size: 0.8em; }
-    /* line 29, source/stylesheets/tagbox.css.scss */
+    /* line 29, tagbox.css.scss */
     .tag_box li a:hover {
       background-color: #e5e5e5; }
-    /* line 32, source/stylesheets/tagbox.css.scss */
+    /* line 32, tagbox.css.scss */
     .tag_box li a.active {
       background: #57A957;
       border: 1px solid #4c964d;
       color: #FFF; }
 
-/* line 39, source/stylesheets/tagbox.css.scss */
+/* line 39, tagbox.css.scss */
 .tag_box.inline li {
   float: left; }

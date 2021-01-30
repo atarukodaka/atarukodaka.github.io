@@ -288,6 +288,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://atarukodaka.github.iohobby/jazz.html</loc>
+    <lastmod>2020-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://atarukodaka.github.iohobby/led_light_for_figures.html</loc>
     <lastmod>2015-04-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -326,6 +332,12 @@
   <url>
     <loc>http://atarukodaka.github.iomisc/feazer-higesori.html</loc>
     <lastmod>2016-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://atarukodaka.github.iomisc/mastle_training.html</loc>
+    <lastmod>2020-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -527,6 +539,17 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://atarukodaka.github.ioworkout/tools.html</loc>
+    <lastmod>2020-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://atarukodaka.github.ioworkout/workout.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://atarukodaka.github.iocooking/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -578,6 +601,11 @@
   </url>
   <url>
     <loc>http://atarukodaka.github.iosoftware/middleman/susume/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://atarukodaka.github.ioworkout/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
