@@ -1,7 +1,7 @@
 ---
 title: Android機からlocalhostへUSB接続で実機テスト
 date: 2021-02-28
-image: portfowarding.png
+cover: portfowarding.png
 ---
 
 ## やりかた

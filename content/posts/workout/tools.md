@@ -1,7 +1,7 @@
 ---
 title: 揃えるべきツール
 date: 2020-12-20
-image: matt.jpg
+cover: matt.jpg
 ---
 
 ## あったほうがいいもの

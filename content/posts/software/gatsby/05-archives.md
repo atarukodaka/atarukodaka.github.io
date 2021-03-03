@@ -1,7 +1,7 @@
 ---
 title: Gatsby - [5] Archives
 date: 2021-02-11
-image: gatsby.png
+cover: gatsby.png
 ---
 ## やること
 

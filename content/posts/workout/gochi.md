@@ -1,7 +1,7 @@
 ---
 title: ゴッチ式トレーニング
 date: 2021-02-19
-image: trump.jpg
+cover: trump.jpg
 ---
 
 ## 基本形

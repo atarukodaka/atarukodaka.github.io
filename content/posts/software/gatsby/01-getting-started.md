@@ -1,7 +1,7 @@
 ---
 title: Gatsby - [1] Getting Started
 date: 2021-02-09 01:00:00
-image: gatsby.png
+cover: gatsby.png
 ---
 
 ## TL;DR
