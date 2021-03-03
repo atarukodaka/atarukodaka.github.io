@@ -2,6 +2,7 @@
 title: ウマ娘
 date: 2021-03-02
 image: gorushi.png
+cover: gorushi.png
 description: ウマ娘育成ゲーム始めてみた。
 ---
 
