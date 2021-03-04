@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{NAZ6:function(e,a,c){"use strict";c.r(a);c("q1tI");var t=c("bSK8"),n=c("iDny"),r=c("7oih"),b=c("AeFk");a.default=function(e){var a=e.pageContext.breadcrumb.crumbs;return Object(b.a)(r.a,null,Object(b.a)(t.Breadcrumb,{crumbs:a,crumbLabel:"Monthly Archives"}),Object(b.a)("h1",{className:"pageTitle"},"Monthly Archives"),Object(b.a)(n.a,null))}}}]);
+//# sourceMappingURL=component---src-pages-archives-js-f399f6e1c772570dd3ac.js.map

@@ -51,9 +51,7 @@ description: 自宅トレーニングをはじめるにあたってのおぼえ�
 ## 連載記事
 各部位ごとの詳しい内容は別記事に：
 
-<PostLink slug="/workout/02_squat/"/>
-<PostLink slug="/workout/03_pushup/"/>
-<PostLink slug="/workout/04_pullup/"/>
+<LinkPost to="/workout/02_squat/"/>
+<LinkPost to="/workout/03_pushup/"/>
+<LinkPost to="/workout/04_pullup/"/>
 
-
-asefasef

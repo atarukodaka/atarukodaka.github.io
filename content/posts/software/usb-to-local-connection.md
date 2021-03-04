@@ -10,15 +10,12 @@ cover: portfowarding.png
 まずデバッグを有効にするアレをしとく。
 んで繋いだら chrome://inspect/#devicesにアクセスし、
 
-<div style="max-width: 300px">
-<Image filename="portfowarding.png"/>
-</div>
+![portward](./portfowarding.png)
 
 "Porf fowarding" で port: 8000, IPaddress and port: localhost:8000 と設定し、Enable port forwarding のチェックを入れる。
 
-<div style="max-width: 300px">
-<Image filename="portfowarding2.png"/>
-</div>
+
+![portward](./portfowarding2.png)
 
 実機から localhost:8000 にアクセスすれば見られるはず。
 

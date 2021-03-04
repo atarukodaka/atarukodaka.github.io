@@ -18,8 +18,8 @@
 <url> <loc>https://atarukodaka.github.io/hobby/jazz.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/bar/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/awesome/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/foo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/baz/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://atarukodaka.github.io/foo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/wsl.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game/fgo.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/figureskating/sochi-gala-incident.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -36,8 +36,8 @@
 <url> <loc>https://atarukodaka.github.io/software/x11-vagrant.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/hexo-vagrant.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/figureskating/cheat_sheet.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/software/middleman/v4-resources-collection.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game/kancolle/event/2017-winter.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://atarukodaka.github.io/software/middleman/v4-resources-collection.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/middleman/framework_consideration.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/figureskating/practise/howtostart.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game/kancolle/kancolle-ranker.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -67,8 +67,8 @@
 <url> <loc>https://atarukodaka.github.io/hobby/led_light_for_figures.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/build-status-badges.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/middleman/extension-memo.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/software/middleman/cucumber.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/middleman/extension.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://atarukodaka.github.io/software/middleman/cucumber.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/middleman/redcarpet-toc.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/middleman/explore_middleman-01.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/middleman/susume/08-memo.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -121,8 +121,8 @@
 <url> <loc>https://atarukodaka.github.io/figureskating/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/figureskating/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game/wot</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/software/middleman</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game/kancolle/event</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://atarukodaka.github.io/software/middleman</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/figureskating/practise</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game/kancolle</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/middleman/susume</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

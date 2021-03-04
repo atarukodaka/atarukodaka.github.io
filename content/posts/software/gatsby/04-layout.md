@@ -210,4 +210,4 @@ const Foo = () => (
 こんな感じに：
 
 
-<Image filename="gatsby-4.png"/>
+![gatsby-4](./gatsby-4.png)
