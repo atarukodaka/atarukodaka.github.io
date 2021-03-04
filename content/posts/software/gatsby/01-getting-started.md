@@ -8,7 +8,7 @@ cover: gatsby.png
 React, GraphQL, webpack などのフロントエンド、クエリ各種技術を詰め込んだ静的サイトジェネレータらしい。
 以前はmiddlemanを使っていたが、gatsbyに乗り換えてみたのでその記録。
 
-なるべくプレインな状態から始めて、少しずつ肉付けしていく。
+スターターなどは使わず、スクラッチから始めて、少しずつ肉付けしていく。
 
 ## 前提知識
 
@@ -43,28 +43,34 @@ sudo npm install n -g
 npm install --global gatsby-cli
 ```
 
-### hello world starter から始める
-starter としてdefault や blog　があるが、それらよりhello-worldのほうが余計なのが少ないのでそれを使う：
+### 最小限のパッケージを入れる
+gatsby 自身とその前提となる react を入れる(react dom も）：
 
 ```sh
-gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-cd my-hello-world-starter/
+cd sampleapp
+npm i --save react react-dom gatsby
 gatsby develop
-(あるいは npm run develop)
 ```
 
-で localhost:8000 にアクセスできる。
+でサーバーが立ち上がり、 localhost:8000 にアクセスできる。
+何もないので当然404が出るが、とりあえず立ち上がりはした。
 
-```sh
-gatsby build
-(あるいは npm run build)
-```
-
-で public/ 以下に出力される。
+![404](./404.png)
 
 ## sourth filetype
 
-src/pages/ 以下は自動的に読んで出力してくれる。
+src/pages/ 以下は自動的に読んで、よしなに出力してくれる。
+
+- src/pages/index.js -> /
+- src/pages/helloworld.js -> /helloworld/
+- src/pages/about/index.js -> /about/
+
+などのように。どのように出力するかだが、JSX を返す関数を default で export してあげると、
+その通りに出力してくれる：
+
+```sh
+mkdir -p src/pages
+```
 
 ```js:title=src/pages/about.js
 import React from "react"
@@ -76,9 +82,7 @@ const AboutPage = () => {
 export default AboutPage
 ```
 
-のように、about.jsにHTMLっぽいけどXMLを返す関数を作って export すると、 /about で出力する。返り値は必す単一要素で括ること。
-
-関数名は何でもよくて、default を named とすれば
+　　export default であれば書き方は、
 
 ```js
 import React from "react"
@@ -123,4 +127,5 @@ const AboutPage = () => {
 - src/pages/ から　localhost:8000/ に出力できた
 - コンポーネント（独自タグ）を作って使えた
 
-<Link to="../02-graphql">NEXT: 第二回：GraphQL</Link>
+<LinkPost to="/software/gatsby/02-graphql/">NEXT: 第2回：GraphQL</LinkPost>
+

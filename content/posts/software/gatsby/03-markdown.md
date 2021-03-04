@@ -10,7 +10,7 @@ cover: gatsby.png
   - component が使えるのでうれしい
 
 ## インストールと設定
-ふつーはmarkdown-transfer が標準ですが、MDXのほうが便利なのでそちらを入れます。後で入れ替えるも二度手間ですし。とはいえしばらくはMDX独自の機能は使いません。
+ここではmarkdown-transfer ではなく、MDXのほうが便利なのでそちらを入れます。後で入れ替えるも二度手間ですし。とはいえしばらくはMDX独自の機能は使いません。
 
 ```sh
 npm install --save gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react
@@ -47,14 +47,14 @@ date: 2020-02-02
 これで localhost:8000/awesome/ で表示されます。
 
 ## 文書は別場所に
-マークアップ文書群は別に分けたいというのと、src/pages/に置いたままだと自動でいろいろ処理されてしまうため、自分でごにょごにょとできない（具体的には allMdx.nodes に入ってこない）という都合もあるので、content/以下に置くことにします。
+マークアップ文書群は別に分けたいというのと、src/pages/に置いたままだと自動でいろいろ処理されてしまうため、自分でごにょごにょとできない（具体的には allMdx.nodes に入ってこない）という都合もあるので、content/posts/ 以下に置くことにします。
 
-そのフォルダをソースとして読み出しますよ、というのを追加設定します。プラグインのインストールです。
+そのフォルダをソースとして読み出しますよ、というのを追加設定します。ソースファイルプラグインのインストールです。
 
 ```sh
 npm install --save gatsby-source-filesystem
-mkdir content
-mv src/pages/awesome.md content
+mkdir -p content/posts
+mv src/pages/awesome.md content/posts
 ```
 
 ```js:title=gatsby-config.js
@@ -63,13 +63,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `content`,
-        path: `${__dirname}/content`,
-      }b
+        name: `posts`,
+        path: `${__dirname}/content/posts`,
+      }
     ...
 ```
 
-これで content/ 以下のファイルも読み出せるようになりました。
+これで content/posts 以下のファイルも読み出せるようになりました。
 ただし先程のように /awesome への書き出しは自動でやってくれなくなったので、自分で処理を実装する必要があります。
 
 ## マークアップ文書郡を取り出す
@@ -99,6 +99,27 @@ query MyQuery {
 + クエリで mdx リソースのノード群を取り出す
 + それぞれについてテンプレートファイルに当てはめページを作成する。
 
+!!! fields.slug
+
+```js:title=gatsby-node.js
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+    const { createNodeField } = actions
+    //fmImagesToRelative(node)
+
+    if (node.internal.type === `Mdx`) {
+        const slug = createFilePath({ node, getNode })
+        createNodeField({
+            node,
+            name: 'slug',
+            value: slug
+        })
+    }
+}
+```
+
+
 となります。ページ作成は、createPage() という関数が用意されてるので、それを使う形になります。
 新規に gatsby-node.js を作成します：
 
@@ -111,23 +132,21 @@ exports.createPages = async ( { graphql, actions}) => {
     {
         allMdx {
             nodes {
-                frontmatter {
-                    title
+                fields {
+                  slug
                 }
-                slug
-                body
             }
         }
     }
     `)
     data.allMdx.nodes.map(node=> {
-        console.log('create markdown page: ', node.slug)
+        console.log('create markdown page: ', node.fields.slug)
 
        createPage({
            path: node.slug,
            component: path.resolve('src/templates/post-template.js'),
            context: {
-               node: node,
+               slug: node.fields.slug,
            }
        })
     })

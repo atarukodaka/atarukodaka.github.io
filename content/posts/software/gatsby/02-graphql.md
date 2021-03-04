@@ -11,7 +11,8 @@ cover: gatsby.png
 
 ## サイト情報を登録
 
-前準備として、サイトのタイトルや著者名を登録します：
+gatsby-config.js は重要な設定ファイルで、サイト情報や利用するプラグインなどを登録します。
+まずはサイトのタイトルや著者名などを記入：
 
 ```js:title=gatsby-config.js
 module.exports = {
@@ -56,6 +57,8 @@ query MyQuery {
 }
 ```
 と返ってきます。これをプログラム中で取得できれば data.site.siteMetadata.title として参照できるわけです。
+
+![graphql](./graphql.png)
 
 ## クエリー処理
 そのやり方として、大きくわけてPage Query と Non-Page Query の２つがあります。
@@ -121,5 +124,6 @@ export default Hello
 
 これで著者に向かって挨拶してくれるタグができました。
 
+次はマークダウンを使います。
 
-
+<LinkPost to="/software/gatsby/03-markdown/">NEXT: 第3回：Markdown</LinkPost>
