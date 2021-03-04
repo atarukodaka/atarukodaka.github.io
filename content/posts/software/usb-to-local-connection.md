@@ -20,4 +20,5 @@ cover: portfowarding.png
 実機から localhost:8000 にアクセスすれば見られるはず。
 
 ## 参考サイト
-[Chrome DevToolsを用いて実機のAndroidスマホでデバッグする \| mktia's note](https://blog.mktia.com/how-to-debug-websites-on-android-with-chrome-devtools/)
+<LinkExternal to="https://blog.mktia.com/how-to-debug-websites-on-android-with-chrome-devtools/">Chrome DevToolsを用いて実機のAndroidスマホでデバッグする</LinkExternal>
+
