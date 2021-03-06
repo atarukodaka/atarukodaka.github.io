@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{FmqG:function(e,a,c){"use strict";c.r(a);c("mXGw");var t=c("LVJ7"),r=c("eofM"),n=c("6It8"),b=c("6h0R");a.default=function(e){var a=e.pageContext.breadcrumb.crumbs;return Object(b.a)(n.a,null,Object(b.a)(t.Breadcrumb,{crumbs:a,crumbLabel:"Monthly Archives"}),Object(b.a)("h1",{className:"pageTitle"},"Monthly Archives"),Object(b.a)(r.a,null))}}}]);
+//# sourceMappingURL=component---gatsby-theme-aksite-src-pages-archives-js-ca1db26ba5ed2a3fa43c.js.map

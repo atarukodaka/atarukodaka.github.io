@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{Wvfw:function(e,c,r){"use strict";r.r(c);r("mXGw");var a=r("LVJ7"),t=r("WJjT"),b=r("6It8"),u=r("6h0R");c.default=function(e){var c=e.pageContext.breadcrumb.crumbs;return Object(u.a)(b.a,null,Object(u.a)(a.Breadcrumb,{crumbs:c,crumbLabel:"Directory Archives"}),Object(u.a)("h1",{className:"pageTitle"},"Directory Archives"),Object(u.a)(t.a,null))}}}]);
+//# sourceMappingURL=component---gatsby-theme-aksite-src-pages-directories-js-983f26c04af9389b2e4c.js.map
