@@ -1,7 +1,10 @@
 ---
-title: Gatsby - [5] Archives
+title: 月別アーカイブ
 date: 2021-02-11
 cover: gatsby.png
+series:
+  title: スクラッチから始めるGatsby
+  number: 5
 ---
 ## やること
 
@@ -139,4 +142,5 @@ export const PostExcerpt = ({ node }) => {
 
 from, to で指定した期間の mdx node を取ってきて、タイトルと要旨(excerpt)を表示し、単体表示ページへのリンクも貼り付ける形です。
 
-
+## 連載記事
+<Series title="スクラッチから始めるGatsby" display="card" current="5"/>

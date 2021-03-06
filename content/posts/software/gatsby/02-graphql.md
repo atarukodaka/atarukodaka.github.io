@@ -1,7 +1,10 @@
 ---
-title: Gatsby - [2] GraphQL
+title: GraphQLで遊ぶ
 date: 2021-02-09 02:00:00
 cover: gatsby.png
+series:
+  title: スクラッチから始めるGatsby
+  number: 2
 ---
 
 ## やること

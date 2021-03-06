@@ -1,7 +1,10 @@
 ---
-title: 宅トレ[2] - スクワット
+title: スクワット
 date: 2021-02-28
 cover: undou_squat_man.png
+series:
+    title: 宅トレことはじめ
+    number: 2
 ---
 
 

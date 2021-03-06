@@ -1,7 +1,10 @@
 ---
-title: 宅トレ[3] - プッシュアップ
+title: プッシュアップ
 date: 2021-03-01 00:00:00
 cover: udetate_man.png
+series:
+    title: 宅トレことはじめ
+    number: 3
 ---
 
 

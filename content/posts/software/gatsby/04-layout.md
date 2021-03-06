@@ -1,7 +1,10 @@
 ---
-title: Gatsby - [4] Layout
+title: Layoutを決める
 date: 2021-02-09 04:00:00
 cover: gatsby.png
+series:
+  title: スクラッチから始めるGatsby
+  number: 4
 ---
 
 ## やること
@@ -211,3 +214,6 @@ const Foo = () => (
 
 
 ![gatsby-4](./gatsby-4.png)
+
+## 連載記事
+<Series title="スクラッチから始めるGatsby" display="card" current="4"/>

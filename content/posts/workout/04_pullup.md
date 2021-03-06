@@ -1,7 +1,10 @@
 ---
-title: 宅トレ[4] - プルアップ
+title: プルアップ
 date: 2021-03-01 01:00:00
 cover: undou_kensui_man.png
+series:
+    title: 宅トレことはじめ
+    number: 4
 ---
 
 

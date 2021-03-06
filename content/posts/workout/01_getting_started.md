@@ -1,8 +1,11 @@
 ---
-title: 宅トレことはじめ[1]
+title: はじめに
 date: 2021-02-21
 cover: fukkin_man.png
 description: 自宅トレーニングをはじめるにあたってのおぼえがき
+series:
+    title: 宅トレことはじめ
+    number: 1
 ---
 
 ## 構成
@@ -51,7 +54,4 @@ description: 自宅トレーニングをはじめるにあたってのおぼえ�
 ## 連載記事
 各部位ごとの詳しい内容は別記事に：
 
-<LinkPost to="/workout/02_squat/"/>
-<LinkPost to="/workout/03_pushup/"/>
-<LinkPost to="/workout/04_pullup/"/>
-
+<Series title="宅トレことはじめ" display="card" current="1"/>

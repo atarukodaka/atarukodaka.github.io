@@ -1,7 +1,11 @@
 ---
-title: Gatsby - [1] Getting Started
+title: Getting Started
 date: 2021-02-09 01:00:00
 cover: gatsby.png
+series:
+  title: スクラッチから始めるGatsby
+  number: 1
+
 ---
 
 ## TL;DR
@@ -127,5 +131,9 @@ const AboutPage = () => {
 - src/pages/ から　localhost:8000/ に出力できた
 - コンポーネント（独自タグ）を作って使えた
 
-<LinkPost to="/software/gatsby/02-graphql/">NEXT: 第2回：GraphQL</LinkPost>
 
+<LinkPost to="/software/gatsby/02-graphql/" display="text"/>
+<LinkPost to="/software/gatsby/02-graphql/"/>
+
+## 連載記事
+<Series title="スクラッチから始めるGatsby" display="card" current="1"/>

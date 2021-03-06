@@ -1,7 +1,10 @@
 ---
-title: Gatsby - [3] Markdown
+title: Markdownで書く
 date: 2021-02-09 03:00:00
 cover: gatsby.png
+series:
+  title: スクラッチから始めるGatsby
+  number: 3
 ---
 
 ## やること
@@ -184,3 +187,5 @@ node.body はいろいろ関数やらが組み込まれた形式になってる�
 
 
 
+## 連載記事
+<Series title="スクラッチから始めるGatsby" display="card" current="3"/>
