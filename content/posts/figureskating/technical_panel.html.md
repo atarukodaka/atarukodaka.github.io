@@ -15,7 +15,21 @@ cover: technical_panel.png
 - RO: リプレイオペレーター
 
 ### TC: テクニカルコントローラー
-<span style="text-align: left"><img src="./tc_face.png" height="50"/></span>
+
+<Grid container direction="row" alignItems="center">
+<Grid item xs="2">
+
+![tc](./tc_face.png#width=100px;height=100px;margin=10px;position=relative;float:left)
+
+</Grid>
+
+<Grid item xs="8">
+<Baloon>ASDASD</Baloon>
+</Grid>
+
+</Grid>
+
+
 監督
 
 ### TS: テクニカルスペシャリスト
