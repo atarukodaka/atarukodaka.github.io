@@ -1,0 +1,2 @@
+(self.webpackChunksite=self.webpackChunksite||[]).push([[867],{4150:function(e,r,t){"use strict";t.r(r);t(7378);var c=t(2768),u=t(9259),s=t(7470),a=t(2861);r.default=function(e){var r=e.pageContext.breadcrumb.crumbs;return(0,a.tZ)(s.Z,null,(0,a.tZ)(c.aG,{crumbs:r,crumbLabel:"Directory Archives"}),(0,a.tZ)("h1",{className:"pageTitle"},"Directory Archives"),(0,a.tZ)(u.Z,null))}}}]);
+//# sourceMappingURL=component---gatsby-theme-aksite-src-pages-directories-js-28aa2819a57f7b0e4a2c.js.map
