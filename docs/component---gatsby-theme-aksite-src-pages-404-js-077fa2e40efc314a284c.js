@@ -1,2 +1,0 @@
-(self.webpackChunksite=self.webpackChunksite||[]).push([[490],{8867:function(t,u,n){"use strict";n.r(u);n(7378);var e=n(2861);u.default=function(){return(0,e.tZ)("div",null,(0,e.tZ)("h1",null,"Not Found"))}}}]);
-//# sourceMappingURL=component---gatsby-theme-aksite-src-pages-404-js-077fa2e40efc314a284c.js.map

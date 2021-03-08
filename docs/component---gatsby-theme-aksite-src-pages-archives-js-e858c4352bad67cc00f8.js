@@ -1,2 +1,0 @@
-(self.webpackChunksite=self.webpackChunksite||[]).push([[550],{3588:function(e,t,u){"use strict";u.r(t);u(7378);var r=u(2768),s=u(6576),a=u(7470),c=u(2861);t.default=function(e){var t=e.pageContext.breadcrumb.crumbs;return(0,c.tZ)(a.Z,null,(0,c.tZ)(r.aG,{crumbs:t,crumbLabel:"Monthly Archives"}),(0,c.tZ)("h1",{className:"pageTitle"},"Monthly Archives"),(0,c.tZ)(s.Z,null))}}}]);
-//# sourceMappingURL=component---gatsby-theme-aksite-src-pages-archives-js-e858c4352bad67cc00f8.js.map
