@@ -5,6 +5,10 @@ cover: gorushi.png
 description: ウマ娘育成ゲーム始めてみた。
 ---
 
+<Spoiler>
+sdfasdf
+</Spoiler>
+
 ## 育成
 スピード重視短距離が育てやすいらしい。
 
@@ -16,6 +20,11 @@ description: ウマ娘育成ゲーム始めてみた。
 ![umamusume](./umamusume.png)
 
 ## 娘たち
+
+### ウォッカ
+スピードスタミナ先行でファイナルまで。決勝は敗退。
+フレのトウカイテイオーSSRの友情トレが頻出してくれた。
+![wokka](./wokka.jpg)
 
 ### ダイワスカーレット
 有馬まで行ったが長距離で勝てず。。。

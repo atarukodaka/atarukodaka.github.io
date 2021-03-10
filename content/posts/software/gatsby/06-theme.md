@@ -25,7 +25,7 @@ src/components/*.js などの機能と、content/posts/ などのコンテンツ
 
 ### 作業用ルート
 
-private: true を入れた package.json を作り、workspace に 上記２つのディレクトリを指定：
+private: true を入れた package.json を作り、workspaces に 上記２つのディレクトリを指定：
 
 ```sh
 yarn init -yp
@@ -78,6 +78,9 @@ gatsby new site https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```    
 
 作るテーマをプラグインとして組み込みます：
+```sh
+yarn workspace site add gatsby-theme-aksite
+```
 
 ```js:title=site/gatsby-config.js
 module.exports = {
