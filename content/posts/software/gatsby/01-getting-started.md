@@ -132,7 +132,6 @@ const AboutPage = () => {
 - コンポーネント（独自タグ）を作って使えた
 
 
-<LinkPost to="/software/gatsby/02-graphql/" display="text"/>
 <LinkPost to="/software/gatsby/02-graphql/"/>
 
 ## 連載記事
