@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{tEGQ:function(e,c,r){"use strict";r.r(c);r("q1tI");var a=r("bSK8"),t=r("oHVP"),b=r("7oih"),u=r("AeFk");c.default=function(e){var c=e.pageContext.breadcrumb.crumbs;return Object(u.a)(b.a,null,Object(u.a)(a.Breadcrumb,{crumbs:c,crumbLabel:"Directory Archives"}),Object(u.a)("h1",{className:"pageTitle"},"Directory Archives"),Object(u.a)(t.a,null))}}}]);
-//# sourceMappingURL=component---src-pages-directories-js-f8783edb1b22ab7207b0.js.map
