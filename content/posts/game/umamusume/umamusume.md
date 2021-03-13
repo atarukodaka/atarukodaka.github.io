@@ -4,11 +4,6 @@ date: 2021-03-02
 cover: gorushi.png
 description: ウマ娘育成ゲーム始めてみた。
 ---
-
-<Spoiler>
-sdfasdf
-</Spoiler>
-
 ## 育成
 スピード重視短距離が育てやすいらしい。
 
@@ -51,6 +46,18 @@ URAファイナル進出も予選で敗退。
 ### タイキシャトル☆３
 
 ![taikishatoru](./taikishatoru.png)
+
+
+## サポート
+### SSRスピード スペシャルウィーク
+イベント報酬。
+
+末脚
+
+### SSRスタミナ ゴルシ
+追い抜き系
+
+
 
 
 ## 参考サイト
