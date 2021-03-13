@@ -22,7 +22,6 @@
 <url> <loc>https://atarukodaka.github.io/bar/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/baz/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/awesome/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/foo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/wsl.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game/fgo.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/figureskating/sochi-gala-incident.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -100,6 +99,7 @@
 <url> <loc>https://atarukodaka.github.io/game/ingress.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/jekyll-bootstrap.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/development-environment.html/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://atarukodaka.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -176,5 +176,4 @@
 <url> <loc>https://atarukodaka.github.io/archives/201501</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/archives/201411</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
