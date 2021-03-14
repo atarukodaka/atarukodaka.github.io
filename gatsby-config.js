@@ -39,7 +39,9 @@ module.exports = {
           "/software/middleman/susume": "Middlemanのすすめ",
           "/figureskating": "フィギュアスケート",
           "/figureskating/practise": "銀盤練習",
-          "/hobby": "趣味"        
+          "/hobby": "趣味" ,
+          "/culture": "カルチャー"
+
         }
       }
     }

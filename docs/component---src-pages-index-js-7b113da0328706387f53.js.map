@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["IndexPage"],"mappings":"2FAAA,4CAIeA,UAFG,kBAAO","file":"component---src-pages-index-js-7b113da0328706387f53.js","sourcesContent":["import React from 'react'\n\nconst IndexPage = () => (<>HELLO</>)\n\nexport default IndexPage\n"],"sourceRoot":""}
