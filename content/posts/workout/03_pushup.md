@@ -5,6 +5,7 @@ cover: udetate_man.png
 series:
     title: 宅トレことはじめ
     number: 3
+draft: true    
 ---
 
 

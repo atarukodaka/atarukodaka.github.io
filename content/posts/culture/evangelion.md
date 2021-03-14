@@ -3,6 +3,7 @@ title: EVANGELION終劇
 date: 2021-03-11
 description: 終劇、観劇
 cover: ./evangelion_do_not_open.jpg
+draft: true
 ---
 
 ## 観劇
@@ -17,5 +18,9 @@ cover: ./evangelion_do_not_open.jpg
 かれこれ四半世紀に及ぶ彼らへの想いが、一つずつ浄化され、昇天していくのを感じつつ、
 ああ、本当にこれで終わるのだな、と淋しさを覚える。
 
-
+snip
 </Spoiler>
+
+
+## 参考
+- [すでにエヴァンゲリオンもアスカも必要なかったことに気づいてしまった────『シン：エヴァンゲリオン劇場版』ネタバレ感想 \- 高度資本主義社会なんちゃら](https://kei-ex.hatenablog.com/entry/2021/03/14/023854)

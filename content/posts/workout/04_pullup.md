@@ -5,6 +5,7 @@ cover: undou_kensui_man.png
 series:
     title: 宅トレことはじめ
     number: 4
+draft: true        
 ---
 
 
