@@ -116,15 +116,6 @@
 <url> <loc>https://atarukodaka.github.io/workout</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/hobby</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/5</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/6</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/7</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/8</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/9</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/10</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/figureskating</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -136,7 +127,6 @@
 <url> <loc>https://atarukodaka.github.io/figureskating/practise</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/game/kancolle</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/software/middleman/susume</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/tag/workout</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/archives/202103</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/archives/202102</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/archives/202012</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -174,5 +164,4 @@
 <url> <loc>https://atarukodaka.github.io/archives/201411</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://atarukodaka.github.io/archives/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://atarukodaka.github.io/tag/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

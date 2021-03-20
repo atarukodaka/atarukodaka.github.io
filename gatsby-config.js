@@ -27,6 +27,11 @@ module.exports = {
       options: {
         contentPath: `content/posts`,
 
+        labels: [
+          {directory: "/workout", label: "ワークアウト"},
+          
+        ],
+
         directoryLabels: {
           "/workout": "ワークアウト",
           "/game": "ゲーム",
