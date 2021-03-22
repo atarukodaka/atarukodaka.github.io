@@ -69,10 +69,10 @@ module.exports = {
       options: {
         name: 'site name',
         shrot_name: 'site short name',
-        start_url: '/?utm_source=homescreen',
+        start_url: '/',
         theme_color: '#eee',
         display: 'minimal-ui',
-        icon: 'icons/icon-72x72.jpg'
+        icon: 'static/icons/icon-72x72.jpg'
         /*
         icons: [
           { src: 'icons/icon-72x72.jpg', sizes: "72x72" },
