@@ -18,20 +18,33 @@ module.exports = {
     social: {
       twitter: 'ataru_kodaka',
       github: 'atarukodaka',
-    }  
+    }
   },
   plugins: [
-	`gatsby-plugin-mdx`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-theme-aksite`,
       options: {
         contentPath: `content/posts`,
+        //basePath: '/blog',
+        defaultLang: 'ja',
 
-        labels: [
-          {directory: "/workout", label: "ワークアウト"},
-          
-        ],
+        directoryLabels: [
+          { directory: "workout", label: "ワークアウト" },
+          { directory: "game", label: "ゲーム" },
+          { directory: "game/kancolle", label: "艦これ" },
+          { directory: "game/kancolle/event", label: "イベント" },
+          { directory: "game/wot", label: "WOT" },
+          { directory: "game/umamusume", label: "ウマ娘" },
+          { directory: "software", label: "ソフトウェア" },
+          { directory: "software/gatsby", label: "Gatsby" },
+          { directory: "figureskating", label: "フィギュアスケート" },
+          { directory: "figureskating/practise", label: "銀盤練習" },
+          { directory: "culture", label: "カルチャー" },
+          { directory: "hobby", label: "趣味" }
+        ]
 
+        /*
         directoryLabels: {
           "/workout": "ワークアウト",
           "/game": "ゲーム",
@@ -48,7 +61,26 @@ module.exports = {
           "/culture": "カルチャー"
 
         }
+        */
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'site name',
+        shrot_name: 'site short name',
+        start_url: '/?utm_source=homescreen',
+        theme_color: '#eee',
+        display: 'minimal-ui',
+        icon: 'icons/icon-72x72.jpg'
+        /*
+        icons: [
+          { src: 'icons/icon-72x72.jpg', sizes: "72x72" },
+          { src: 'icons/icon-144x144.jpg', sizes: "144x144" },
+        ]
+        */
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
