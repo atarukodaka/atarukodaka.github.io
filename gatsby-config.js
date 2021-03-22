@@ -67,10 +67,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'site name',
-        shrot_name: 'site short name',
+        name: 'Ataru Kodaka Site',
+        shrot_name: 'AKS',
         start_url: '/',
-        theme_color: '#eee',
+        theme_color: '#222277',
         display: 'minimal-ui',
         icon: 'static/icons/icon-72x72.jpg'
         /*
