@@ -71,6 +71,7 @@ module.exports = {
         shrot_name: 'AKS',
         start_url: '/',
         theme_color: '#222277',
+        background_color: '#ffffff',
         display: 'minimal-ui',
         icon: 'static/icons/icon-72x72.jpg'
         /*
