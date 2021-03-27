@@ -64,6 +64,7 @@ module.exports = {
         */
       }
     },
+    /*
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -74,14 +75,10 @@ module.exports = {
         background_color: '#ffffff',
         display: 'minimal-ui',
         icon: 'static/icons/favicon.png'
-        /*
-        icons: [
-          { src: 'icons/icon-72x72.jpg', sizes: "72x72" },
-          { src: 'icons/icon-144x144.jpg', sizes: "144x144" },
-        ]
-        */
+        
       },
     },
     `gatsby-plugin-offline`,
+    */
   ],
 }
