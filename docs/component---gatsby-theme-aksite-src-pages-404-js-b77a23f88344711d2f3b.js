@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"LJ/Q":function(t,n,o){"use strict";o.r(n);o("mXGw");var c=o("6It8"),u=o("6h0R");n.default=function(){return Object(u.c)(c.a,{title:"Not Found"},Object(u.c)("h1",null,"Not Found"))}}}]);
-//# sourceMappingURL=component---gatsby-theme-aksite-src-pages-404-js-b77a23f88344711d2f3b.js.map
