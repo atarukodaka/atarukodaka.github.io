@@ -68,7 +68,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Ataru Kodaka Site',
-        shrot_name: 'AKS',
+        short_name: 'AKS',
         start_url: '/',
         theme_color: '#222277',
         background_color: '#ffffff',
