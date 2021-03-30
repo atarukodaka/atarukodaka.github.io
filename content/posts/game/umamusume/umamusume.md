@@ -99,3 +99,4 @@ URAファイナル進出も予選で敗退。
 - [ウマ娘のレジェンドバトル勝てなかったやつは見ろ](https://anond.hatelabo.jp/20210316164637)
 - [スッペンペンWiki\*](https://wikiwiki.jp/sppenpen/)
 - [【ウマ娘】アグネスタキオンを☆３開花した雑感 \- ソーシャルゲームの卒塔婆](https://kusocial.hatenablog.com/entry/2021/03/09/212325)
+- [【ウマ娘】オールＢ育成と多重インブリード説【因子厳選】｜いろはにぽてと](https://irohanipotato.com/umamusume_all_b/)
