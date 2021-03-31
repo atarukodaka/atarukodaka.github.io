@@ -1,8 +1,10 @@
 ---
 title: ウォームアップ
+date: 2021-02-24
 series:
     title: 宅トレことはじめ
     number: 2
+cover: ./junbiundou_shinkyaku.png
 ---
 
 ## ウォームアップは大事

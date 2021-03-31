@@ -4,6 +4,8 @@ date: 2021-03-25
 description: 私が参考にしてる筋トレ系 Youtuberをいくつか紹介します。
 ---
 
+<LinkExternal to="http://atarukodaka.github.io"/>
+
 ## 一般的に有名
 ### なかやまきんにくん
 `youtube:https://www.youtube.com/watch?v=nhGh9N0baQA`
