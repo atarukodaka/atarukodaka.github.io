@@ -3,6 +3,14 @@ title: ウマ娘はじめました
 date: 2021-03-02
 cover: gorushi_cover.png
 description: ウマ娘育成ゲーム始めてみた。
+links:
+    - https://umamusume.jp/
+    - https://eruakudiary.hatenablog.com/entry/2021/02/27/220827
+    - https://goziline.com/archives/43607
+    - https://note.com/renekuroi/n/nfcec96121b63
+    - https://wikiwiki.jp/sppenpen/
+    - https://kusocial.hatenablog.com/entry/2021/03/09/212325
+    - https://irohanipotato.com/umamusume_all_b/
 ---
 ## 育成状況
 
@@ -14,6 +22,18 @@ description: ウマ娘育成ゲーム始めてみた。
 #### チーム編成
 
 ![team](./team-2021-03-27.png)
+
+## 因子持ち
+
+- ゴルシB+：賢さ★２ (フレオペラオー：スピード★３）
+- ゴルシC：根性★２ (ライスC+：賢さ★２）
+- グラスC：賢さ★２（フレテイオー：パワー★３）
+- ライアンC+：賢さ★２（フレクリーク：スピード★３）
+- ライスC+：賢さ★２
+- スペC+：スタミナ★２（ダスカB：スタミナ★２＋オグリD：パワー★２）
+- ダスカB：スタミナ★２（フレテイオーパワー★３＋ライスC+：賢さ★２）
+- ネイチャC+：スピード★２
+
 
 ## 殿堂入りウマ娘
 ### スズカ
@@ -90,13 +110,12 @@ URAファイナル進出も予選で敗退。
 
 
 ## 参考サイト
+<LinkExternal url="https://umamusume.jp/"/>
+<LinkExternal url="https://eruakudiary.hatenablog.com/entry/2021/02/27/220827"/>
+<LinkExternal url="https://goziline.com/archives/43607"/>
+<LinkExternal url="https://note.com/renekuroi/n/nfcec96121b63"/>
+<LinkExternal url="https://wikiwiki.jp/sppenpen/"/>
+<LinkExternal url="https://kusocial.hatenablog.com/entry/2021/03/09/212325"/>
+<LinkExternal url="https://irohanipotato.com/umamusume_all_b/"/>
 
-- [ウマ娘 プリティーダービー 公式ポータルサイト｜Cygames](https://umamusume.jp/)
-- [【ウマ娘】基礎知識、リセマラ、攻略難易度　 \- えるあくの乱数調整](https://eruakudiary.hatenablog.com/entry/2021/02/27/220827)
-- [【ウマ娘攻略】サクラバクシンオー以外でも今夜勝ちたい『ウマ娘 プリティーダービー』【2021年2月号】 \| ゴジライン](https://goziline.com/archives/43607)
-- [【ウマ娘攻略】無課金でも勝ちまくりたいウマ娘トレーナー虎の巻【初心者向け】｜ルネ｜note](https://note.com/renekuroi/n/nfcec96121b63)
-- [【ウマ娘】無課金・微課金の星・有能SRサポートをピックアップ！│ウマ娘ラボ](https://umamusumelabo.com/beginner/srsupport)
-- [ウマ娘のレジェンドバトル勝てなかったやつは見ろ](https://anond.hatelabo.jp/20210316164637)
-- [スッペンペンWiki\*](https://wikiwiki.jp/sppenpen/)
-- [【ウマ娘】アグネスタキオンを☆３開花した雑感 \- ソーシャルゲームの卒塔婆](https://kusocial.hatenablog.com/entry/2021/03/09/212325)
-- [【ウマ娘】オールＢ育成と多重インブリード説【因子厳選】｜いろはにぽてと](https://irohanipotato.com/umamusume_all_b/)
+<LinkExternal url="https://anond.hatelabo.jp/20210316164637"/>

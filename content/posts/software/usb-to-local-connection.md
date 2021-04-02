@@ -1,7 +1,8 @@
 ---
 title: Android機からlocalhostへUSB接続で実機テスト
 date: 2021-02-28
-cover: portfowarding.png
+links: 
+    - https://blog.mktia.com/how-to-debug-websites-on-android-with-chrome-devtools/
 ---
 
 ## やりかた
@@ -20,5 +21,5 @@ cover: portfowarding.png
 実機から localhost:8000 にアクセスすれば見られるはず。
 
 ## 参考サイト
-<LinkExternal to="https://blog.mktia.com/how-to-debug-websites-on-android-with-chrome-devtools/">Chrome DevToolsを用いて実機のAndroidスマホでデバッグする</LinkExternal>
+<LinkExternal url="https://blog.mktia.com/how-to-debug-websites-on-android-with-chrome-devtools/">Chrome DevToolsを用いて実機のAndroidスマホでデバッグする</LinkExternal>
 
