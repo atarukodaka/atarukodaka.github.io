@@ -2,6 +2,7 @@
 title: WSL - Windows Subsytem Linux 開発環境
 category: software
 date: 2019-02-25
+cover: wsl2.png
 ---
 
 ## WSL を有効化する
