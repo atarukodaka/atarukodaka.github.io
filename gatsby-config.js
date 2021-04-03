@@ -28,6 +28,7 @@ module.exports = {
         contentPath: `content/posts`,
         //basePath: '/blog',
         defaultLang: 'ja',
+        enableOgImages: true,
 
         directoryLabels: [
           { directory: "workout", label: "ワークアウト" },
