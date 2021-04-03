@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{MHgn:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return c}));e("mXGw");var u=e("6h0R");function c(n){n.data;var t=n.pageContext;return Object(u.b)("div",null,Object(u.b)("h1",null,"TITLE: ",t.title),Object(u.b)("h3",null,"SULG: ",t.slug))}}}]);
-//# sourceMappingURL=component---gatsby-theme-aksite-src-templates-og-template-js-bf8fdd62c3ead19b9379.js.map

@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{MHgn:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return a}));e("mXGw");var u=e("6h0R");function a(n){n.data;var t=n.pageContext;return Object(u.b)("div",null,Object(u.b)("h1",null,t.title))}}}]);
-//# sourceMappingURL=component---gatsby-theme-aksite-src-templates-og-template-js-d236cdabb9a6f22afa34.js.map
