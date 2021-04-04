@@ -15,6 +15,7 @@ links:
 ## 育成状況
 
 <LinkExternal url="https://atarukodaka.github.io/game/umamusume/umamusume/"/>
+
 ### 殿堂入り
 とりあえずこんな感じ(2021-03-18)：
 
