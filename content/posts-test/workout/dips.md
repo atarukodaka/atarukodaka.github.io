@@ -1,6 +1,6 @@
 ---
 title: ディップス
-draft: true
+date: 2021-04-05
 ---
 
 
