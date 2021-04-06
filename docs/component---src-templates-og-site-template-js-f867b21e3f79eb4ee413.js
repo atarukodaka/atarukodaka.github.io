@@ -1,0 +1,2 @@
+(self.webpackChunksite=self.webpackChunksite||[]).push([[122],{8495:function(n,t,e){"use strict";e.r(t);e(7378);var l=e(2861);t.default=function(){return(0,l.tZ)("div",{style:{margin:"3rem"}},(0,l.tZ)("style",{global:!0},"\n                body {\n                    background-color: #227;\n                    color: white;\n                }\n            "),(0,l.tZ)("h1",null,"TITLE"),(0,l.tZ)("h3",null,"AUTHOR"))}}}]);
+//# sourceMappingURL=component---src-templates-og-site-template-js-f867b21e3f79eb4ee413.js.map

@@ -1,0 +1,2 @@
+(self.webpackChunksite=self.webpackChunksite||[]).push([[217],{3695:function(t,e,n){"use strict";n.r(e);n(7378);var l=n(2861);e.default=function(t){var e=t.data.mdx;return(0,l.tZ)("div",null,(0,l.tZ)("h1",null,e.frontmatter.title),(0,l.tZ)("h3",null,e.frontmatter.date),(0,l.tZ)("div",null,e.description||e.excerpt," "))}}}]);
+//# sourceMappingURL=component---gatsby-plugin-aksite-og-images-src-templates-og-template-js-dfb48a69fbf93eb28c56.js.map

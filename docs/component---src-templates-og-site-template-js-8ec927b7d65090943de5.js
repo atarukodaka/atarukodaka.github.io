@@ -1,0 +1,2 @@
+(self.webpackChunksite=self.webpackChunksite||[]).push([[122],{8495:function(t,u,n){"use strict";n.r(u);n(7378);var e=n(2861);u.default=function(){return(0,e.tZ)("div",null,(0,e.tZ)("h1",null,"TITLE"),(0,e.tZ)("h3",null,"AUTHOR"))}}}]);
+//# sourceMappingURL=component---src-templates-og-site-template-js-8ec927b7d65090943de5.js.map
