@@ -121,3 +121,4 @@ URAファイナル進出も予選で敗退。
 <LinkExternal url="https://irohanipotato.com/umamusume_all_b/"/>
 
 <LinkExternal url="https://anond.hatelabo.jp/20210316164637"/>
+<LinkExternal url="https://wikiwiki.jp/vip_umamusu/"/>
