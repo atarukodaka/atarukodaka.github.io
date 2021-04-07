@@ -135,3 +135,9 @@ const SEO = ( { title, description, cover, lang  } ) => {
 で、こんなかんじに：
 
 <LinkExternal url="https://atarukodaka.github.io/software/gatsby/ogp-images/"/>
+
+
+プラグイン化してみた：
+<LinkExternal url="https://github.com/atarukodaka/gatsby-plugin-aksite-og-images/"/>
+
+
