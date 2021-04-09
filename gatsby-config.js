@@ -21,6 +21,7 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-plugin-aksite-og-images`,
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-theme-aksite`,
@@ -45,24 +46,7 @@ module.exports = {
           { directory: "hobby", label: "趣味" }
         ]
 
-        /*
-        directoryLabels: {
-          "/workout": "ワークアウト",
-          "/game": "ゲーム",
-          "/game/kancolle": "艦これ",
-          "/game/kancolle/event": "イベント",
-          "/game/wot": "World of Tanks",
-          "/game/umamusume": "ウマ娘",
-          "/software": "ソフトウェア",
-          "/software/gatsby": "Gatsby",
-          "/software/middleman/susume": "Middlemanのすすめ",
-          "/figureskating": "フィギュアスケート",
-          "/figureskating/practise": "銀盤練習",
-          "/hobby": "趣味" ,
-          "/culture": "カルチャー"
-
-        }
-        */
+   
       }
     },
     /*
