@@ -21,7 +21,12 @@ module.exports = {
     }
   },
   plugins: [
-    `gatsby-plugin-aks-og-images`,
+    {
+      resolve: `gatsby-plugin-aks-og-images`,
+      options: {
+        ogPagesDir: 'OPENGRAPH-PAGES'
+      }
+    },
     `gatsby-plugin-aks-og-retriever`,
     `gatsby-plugin-mdx`,
     {
