@@ -21,7 +21,8 @@ module.exports = {
     }
   },
   plugins: [
-    `gatsby-plugin-aksite-og-images`,
+    `gatsby-plugin-aks-og-images`,
+    `gatsby-plugin-aks-og-retriever`,
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-theme-aksite`,

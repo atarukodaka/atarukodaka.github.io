@@ -71,7 +71,7 @@ export const post_query = graphql`
 
 export default function OgTemplate({ data, pageContext }) {
     const node = data.mdx
-    
+
     return (
         <div >
             <div>{node.frontmatter.date}</div>
@@ -92,7 +92,7 @@ exports.onPostBuild = async ( { _ }) => {
     const browser = await puppeteer.launch({headless: true})
     const page = await browser.newPage()
     page.setViewport({width: 600, height: 315})
-        
+
     for (const ogPath of ogPages){
         const ogFileUrl = fileUrl(path.join('public', ogPath, 'index.html'))
         const ogImageFile = path.join('public', ogPath, 'cover.png')
@@ -140,4 +140,22 @@ const SEO = ( { title, description, cover, lang  } ) => {
 プラグイン化してみた：
 <LinkExternal url="https://github.com/atarukodaka/gatsby-plugin-aksite-og-images/"/>
 
+## 参考github
+### @akr54
+<LinkExternal url="https://github.com/akr4/gatsby-plugin-og-image"/>
 
+puppeeter使ってスクショ。ただog用page作成はHTML文字列に当てはめる形(renderOgImage)。
+ここのところは template を使いたい。
+
+onPreInit で queueを用意しておき、onCreatePageで og用ページを createPageし、
+スクショ取りキューにプッシュ。
+
+### @MelMacalus
+<LinkExternal url="https://github.com/MelMacaluso/gatsby-plugin-og-images"/>
+
+allMarkdown 決め打ちなので mdx だとそのままは使えない。createPages 内で
+graphql でnodesごとogページをcreateし、onPostBuild でpuppeeter でスクショ。
+
+
+### @squer-solutions
+<LinkExternal url="https://github.com/squer-solutions/gatsby-plugin-open-graph-images"/>
