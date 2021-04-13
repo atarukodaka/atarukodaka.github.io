@@ -7,8 +7,8 @@ date: 2021-04-03
 
 こういうの：
 
-<LinkExternal url="https://kyabe.net/blog/gatsby-auto-generate-ogp-image/"/>
-<LinkExternal url="https://blog.kentarom.com/create-gatsbyjs-plugin-to-dynamically-generate-og-images/"/>
+<LinkOpenGraph url="https://kyabe.net/blog/gatsby-auto-generate-ogp-image/"/>
+<LinkOpenGraph url="https://blog.kentarom.com/create-gatsbyjs-plugin-to-dynamically-generate-og-images/"/>
 
 だがこれらの方法だとフォント入れなきゃだったり、サイズオーバーするとエラーでたりなので、この方法ではなく、
 
@@ -134,15 +134,15 @@ const SEO = ( { title, description, cover, lang  } ) => {
 
 で、こんなかんじに：
 
-<LinkExternal url="https://atarukodaka.github.io/software/gatsby/ogp-images/"/>
+<LinkOpenGraph url="https://atarukodaka.github.io/software/gatsby/ogp-images/"/>
 
 
 プラグイン化してみた：
-<LinkExternal url="https://github.com/atarukodaka/gatsby-plugin-aksite-og-images/"/>
+<LinkOpenGraph url="https://github.com/atarukodaka/gatsby-plugin-aksite-og-images/"/>
 
 ## 参考github
 ### @akr54
-<LinkExternal url="https://github.com/akr4/gatsby-plugin-og-image"/>
+<LinkOpenGraph url="https://github.com/akr4/gatsby-plugin-og-image"/>
 
 puppeeter使ってスクショ。ただog用page作成はHTML文字列に当てはめる形(renderOgImage)。
 ここのところは template を使いたい。
@@ -151,11 +151,11 @@ onPreInit で queueを用意しておき、onCreatePageで og用ページを cre
 スクショ取りキューにプッシュ。
 
 ### @MelMacalus
-<LinkExternal url="https://github.com/MelMacaluso/gatsby-plugin-og-images"/>
+<LinkOpenGraph url="https://github.com/MelMacaluso/gatsby-plugin-og-images"/>
 
 allMarkdown 決め打ちなので mdx だとそのままは使えない。createPages 内で
 graphql でnodesごとogページをcreateし、onPostBuild でpuppeeter でスクショ。
 
 
 ### @squer-solutions
-<LinkExternal url="https://github.com/squer-solutions/gatsby-plugin-open-graph-images"/>
+<LinkOpenGraph url="https://github.com/squer-solutions/gatsby-plugin-open-graph-images"/>

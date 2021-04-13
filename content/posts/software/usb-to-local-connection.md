@@ -21,5 +21,5 @@ links:
 実機から localhost:8000 にアクセスすれば見られるはず。
 
 ## 参考サイト
-<LinkExternal url="https://blog.mktia.com/how-to-debug-websites-on-android-with-chrome-devtools/">Chrome DevToolsを用いて実機のAndroidスマホでデバッグする</LinkExternal>
+<LinkOpenGraph url="https://blog.mktia.com/how-to-debug-websites-on-android-with-chrome-devtools/"/>
 

@@ -15,7 +15,7 @@ links:
 
 たしかに最初は若干ゴム臭いが、一旦洗剤で洗って干しておけばすぐに取れる。丸めて立て掛けて置くだけなのでさほど場所も取らない。
 
-<LinkExternal url="https://www.amazon.co.jp/gp/product/B01N7EQ8CK"/>
+<LinkOpenGraph url="https://www.amazon.co.jp/gp/product/B01N7EQ8CK"/>
 
 ### ディップススタンド　★★★★☆ / 5000円～
 自重トレなら必須レベル。これ一台でプッシュ・プル・コア一通りできる。これがないと（懸垂スタンドがない限り）プル系家トレに難渋する。
@@ -33,7 +33,7 @@ https://www.youtube.com/watch?v=la1PTpPJ084
 
 https://www.amazon.co.jp/gp/product/B01AW0ZFE8/
 
-<LinkExternal url="https://www.amazon.co.jp/gp/product/B01AW0ZFE8"/>
+<LinkOpenGraph url="https://www.amazon.co.jp/gp/product/B01AW0ZFE8"/>
 <AmazonLink asin="B01AW0ZFE8"/>
 
 ### 懸垂スタンド　★★★★☆ / 一万円～

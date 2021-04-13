@@ -24,7 +24,7 @@ yarn workspace gatsby-theme-aksite upgrade-interactive --latest
  + import * as styles from './foo.module.css'
   ```
 
-参考： <LinkExternal url="https://stackoverflow.com/questions/66500985/scss-file-does-not-contain-a-default-export-gatsby-and-sass">reactjs - scss file does not contain a default export (Gatsby and Sass) - Stack Overflow]</LinkExternal>
+参考： <LinkOpenGraph url="https://stackoverflow.com/questions/66500985/scss-file-does-not-contain-a-default-export-gatsby-and-sass">reactjs - scss file does not contain a default export (Gatsby and Sass) - Stack Overflow]</LinkOpenGraph>
 
 ### gatsby-plugin-image
 gatsby-image からこっちのプラグインに変えろと。npm i して gatsby-config.js の plugins[] に加えるのはいつもどおり。あとは、

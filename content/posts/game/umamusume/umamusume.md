@@ -3,18 +3,10 @@ title: ウマ娘はじめました
 date: 2021-03-02
 cover: gorushi_cover.png
 description: ウマ娘育成ゲーム始めてみた。
-links:
-    - https://umamusume.jp/
-    - https://eruakudiary.hatenablog.com/entry/2021/02/27/220827
-    - https://goziline.com/archives/43607
-    - https://note.com/renekuroi/n/nfcec96121b63
-    - https://wikiwiki.jp/sppenpen/
-    - https://kusocial.hatenablog.com/entry/2021/03/09/212325
-    - https://irohanipotato.com/umamusume_all_b/
 ---
 ## 育成状況
 
-<LinkExternal url="https://atarukodaka.github.io/game/umamusume/umamusume/"/>
+<LinkOpenGraph url="https://atarukodaka.github.io/game/umamusume/umamusume/"/>
 
 ### 殿堂入り
 とりあえずこんな感じ(2021-03-18)：
@@ -112,13 +104,13 @@ URAファイナル進出も予選で敗退。
 
 
 ## 参考サイト
-<LinkExternal url="https://umamusume.jp/"/>
-<LinkExternal url="https://eruakudiary.hatenablog.com/entry/2021/02/27/220827"/>
-<LinkExternal url="https://goziline.com/archives/43607"/>
-<LinkExternal url="https://note.com/renekuroi/n/nfcec96121b63"/>
-<LinkExternal url="https://wikiwiki.jp/sppenpen/"/>
-<LinkExternal url="https://kusocial.hatenablog.com/entry/2021/03/09/212325"/>
-<LinkExternal url="https://irohanipotato.com/umamusume_all_b/"/>
+<LinkOpenGraph url="https://umamusume.jp/"/>
+<LinkOpenGraph url="https://eruakudiary.hatenablog.com/entry/2021/02/27/220827"/>
+<LinkOpenGraph url="https://goziline.com/archives/43607"/>
+<LinkOpenGraph url="https://note.com/renekuroi/n/nfcec96121b63"/>
+<LinkOpenGraph url="https://wikiwiki.jp/sppenpen/"/>
+<LinkOpenGraph url="https://kusocial.hatenablog.com/entry/2021/03/09/212325"/>
+<LinkOpenGraph url="https://irohanipotato.com/umamusume_all_b/"/>
 
-<LinkExternal url="https://anond.hatelabo.jp/20210316164637"/>
-<LinkExternal url="https://wikiwiki.jp/vip_umamusu/"/>
+<LinkOpenGraph url="https://anond.hatelabo.jp/20210316164637"/>
+<LinkOpenGraph url="https://wikiwiki.jp/vip_umamusu/"/>

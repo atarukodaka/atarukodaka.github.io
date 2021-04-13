@@ -11,7 +11,7 @@ date: 2021-04-04
 厚生省のだと60度で12分とあるが、さすがに怖いので 70度以上20分は火を通す（余熱含めて）ようにする。
 ただ80度まであげてしまうと固くなるのであげすぎない。
 
-<LinkExternal url="https://www.mhlw.go.jp/file/06-Seisakujouhou-11130500-Shokuhinanzenbu/0000071198.pdf"/>
+<LinkOpenGraph url="https://www.mhlw.go.jp/file/06-Seisakujouhou-11130500-Shokuhinanzenbu/0000071198.pdf"/>
 
 ## 茹でて焼く
 鶏ハムなどが有名だが、やはり表面を焼いたほうが香ばしくなる。皮も食べるのであれば焼く一択。

@@ -21,13 +21,8 @@ module.exports = {
     }
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-aks-og-images`,
-      options: {
-        ogPagesDir: 'OPENGRAPH-PAGES'
-      }
-    },
-    `gatsby-plugin-aks-og-retriever`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-aks-og-images`,
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-theme-aksite`,
@@ -54,6 +49,13 @@ module.exports = {
 
    
       }
+    },
+    `gatsby-transformer-yaml`,        
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            path: `src/data/`,
+        },
     },
     /*
     {
