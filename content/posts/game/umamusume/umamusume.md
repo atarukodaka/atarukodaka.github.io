@@ -114,3 +114,4 @@ URAファイナル進出も予選で敗退。
 
 <LinkOpenGraph url="https://anond.hatelabo.jp/20210316164637"/>
 <LinkOpenGraph url="https://wikiwiki.jp/vip_umamusu/"/>
+<LinkOpenGraph url="https://goziline.com/archives/43766"/>
