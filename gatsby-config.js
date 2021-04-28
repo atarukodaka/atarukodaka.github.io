@@ -18,11 +18,10 @@ module.exports = {
     social: {
       twitter: 'ataru_kodaka',
       github: 'atarukodaka',
-    }
+    },
   },
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-aks-og-images`,
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-theme-aksite`,
@@ -31,7 +30,7 @@ module.exports = {
         //basePath: '/blog',
         defaultLang: 'ja',
         enableOgImages: true,
-
+        siteImage: '/og-images/site/cover.png',
         directoryLabels: [
           { directory: "workout", label: "ワークアウト" },
           { directory: "game", label: "ゲーム" },
@@ -46,8 +45,6 @@ module.exports = {
           { directory: "culture", label: "カルチャー" },
           { directory: "hobby", label: "趣味" }
         ]
-
-   
       }
     },
     `gatsby-transformer-yaml`,        

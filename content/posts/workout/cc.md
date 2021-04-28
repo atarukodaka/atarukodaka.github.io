@@ -4,6 +4,9 @@ date: 2021-04-13
 cover: cc.png
 ---
 
+<LinkOpenGraph url="https://play.google.com/store/apps/details?id=com.simplevision.workout.tabata"/>
+<LinkOpenGraph url="https://www.amazon.co.jp/dp/B0746H85JW"/>
+
 ## プリズナートレーニングとは
 
 ### 概要
