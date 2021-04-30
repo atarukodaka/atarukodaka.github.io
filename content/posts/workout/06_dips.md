@@ -6,6 +6,7 @@ series:
     number: 6
 ---
 
+<LinkOpenGraph url="https://www.youtube.com/watch?v=NP7j1O4p4AY"/>
 ## ディップスは危険？
 基本的にディップスは<Asc256>非推奨</Asc256>です。なぜなら
 
