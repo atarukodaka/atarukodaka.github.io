@@ -1,0 +1,2 @@
+(self.webpackChunksite=self.webpackChunksite||[]).push([[472],{7962:function(e,t,s){"use strict";s.r(t);s(7378),s(5414);var r=s(3180),u=s(2861);t.default=function(e){var t=e.data,s=e.pageContext,a=s.breadcrumb.crumbs,n=s.series;return(0,u.tZ)(r.Z,{title:n,nodes:t.allMdx.nodes,crumbs:a})}}}]);
+//# sourceMappingURL=component---gatsby-theme-aksite-src-templates-series-template-js-68ff311ced36f7dcf957.js.map
